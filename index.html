@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Warehouse Event Board</title>
+<meta name="description" content="Upcoming events that drive foot traffic to the Warehouse Food Hall, with staffing notes.">
+<meta name="theme-color" content="#111418">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<style>
+:root{
+  --bg:#111418; --panel:#1a1f26; --panel2:#222934; --line:#2e3744;
+  --text:#eef2f6; --dim:#9aa7b6; --accent:#FF7A1A;
+  --lvl0:#2a323d; --lvl1:#3b4a2a; --lvl2:#6b4a12; --lvl3:#7a1f2b;
+  --lvl1t:#b8e07a; --lvl2t:#ffc35c; --lvl3t:#ff8a95;
+  font-size:18px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);
+  font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;cursor:pointer}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:12px 16px 10px}
+.top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+h1 span{color:var(--accent)}
+.meta{color:var(--dim);font-size:.8rem;margin-left:auto;text-align:right}
+.tabs{display:flex;gap:6px}
+.tab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px 14px;min-height:44px}
+.tab[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:#111;font-weight:700}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
+.chip{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--line);background:var(--panel);
+  border-radius:999px;padding:7px 14px;min-height:44px;font-size:.9rem;opacity:.45;transition:opacity .15s}
+.chip[aria-pressed="true"]{opacity:1;border-color:var(--c,var(--dim));background:var(--panel2)}
+.chip i{width:12px;height:12px;border-radius:50%;background:var(--c,var(--dim));display:inline-block}
+.chip .n{color:var(--dim);font-size:.75rem}
+.sep{width:1px;height:28px;background:var(--line);margin:0 4px}
+.mini{background:none;border:1px solid var(--line);border-radius:8px;padding:6px 10px;color:var(--dim);font-size:.8rem;min-height:36px}
+main{padding:14px 16px 40px;max-width:1400px;margin:0 auto}
+.week-h{font-size:.85rem;text-transform:uppercase;letter-spacing:.12em;color:var(--dim);margin:18px 0 8px}
+.days{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+@media (min-width:1200px){.days{grid-template-columns:repeat(7,minmax(0,1fr))}.day{padding:10px}.ev .t{font-size:.92rem}}
+.day{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:8px;min-height:120px}
+.day.today{outline:3px solid var(--accent);outline-offset:-1px}
+.dh{display:flex;align-items:baseline;gap:8px}
+.dh b{font-size:1.15rem}
+.dh .dt{color:var(--dim);font-size:.85rem}
+.lvl{margin-left:auto;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  padding:4px 9px;border-radius:999px;background:var(--lvl0);color:var(--dim);white-space:nowrap}
+.lvl.l1{background:var(--lvl1);color:var(--lvl1t)}
+.lvl.l2{background:var(--lvl2);color:var(--lvl2t)}
+.lvl.l3{background:var(--lvl3);color:var(--lvl3t)}
+.ev{border-left:5px solid var(--c);background:var(--panel2);border-radius:8px;padding:8px 10px}
+.ev .t{font-weight:650;line-height:1.25}
+.ev .s{color:var(--dim);font-size:.8rem;margin-top:3px;display:flex;flex-wrap:wrap;gap:4px 10px}
+.ev .tip{font-size:.8rem;margin-top:5px;color:#ffd9b8}
+.imp{font-size:.68rem;font-weight:800;letter-spacing:.06em;padding:1px 6px;border-radius:4px;background:#333c48;color:var(--dim)}
+.imp.high{background:#5a1d26;color:#ff9aa4}.imp.med{background:#4f3a10;color:#ffcc70}
+.quiet{color:var(--dim);font-size:.85rem;font-style:italic}
+/* month */
+.mhead{display:flex;align-items:center;gap:10px;margin:6px 0 10px}
+.mhead h2{margin:0;font-size:1.2rem;min-width:200px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+.dow{color:var(--dim);font-size:.75rem;text-transform:uppercase;text-align:center;padding:4px 0}
+.cell{min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:10px;min-height:96px;padding:6px;text-align:left;display:flex;flex-direction:column;gap:3px}
+.cell.out{opacity:.3}
+.cell.today{outline:3px solid var(--accent);outline-offset:-1px}
+.cell.l1{background:#1f2a1a}.cell.l2{background:#2e2410}.cell.l3{background:#33161c}
+.cell .num{font-weight:700;font-size:.95rem}
+.pill{font-size:.68rem;line-height:1.2;border-left:3px solid var(--c);padding:1px 4px;background:rgba(255,255,255,.04);border-radius:3px;
+  overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.more{font-size:.68rem;color:var(--dim)}
+dialog{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:16px;max-width:560px;width:calc(100% - 32px);padding:16px}
+dialog::backdrop{background:rgba(0,0,0,.6)}
+.legend{color:var(--dim);font-size:.78rem;margin-top:22px;line-height:1.6}
+.legend a{color:var(--dim)}
+.offline{display:none;background:#5a1d26;color:#ffd0d5;text-align:center;font-size:.8rem;padding:4px}
+body.is-offline .offline{display:block}
+@media (max-width:640px){
+  :root{font-size:16px}
+  .meta{margin-left:0;text-align:left;width:100%}
+  .cell{min-height:64px}.pill{display:none}
+  .cell .dots{display:flex;gap:3px;flex-wrap:wrap}
+}
+.dots{display:none}
+.dots i{width:8px;height:8px;border-radius:50%;background:var(--c)}
+</style>
+</head>
+<body>
+<div class="offline">Offline — showing the last saved schedule</div>
+<header>
+  <div class="top">
+    <h1>Warehouse <span>Event Board</span></h1>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" data-view="weeks" aria-selected="true">Next 2 weeks</button>
+      <button class="tab" role="tab" data-view="month" aria-selected="false">Month</button>
+    </div>
+    <div class="meta" id="meta"></div>
+  </div>
+  <div class="filters" id="filters"></div>
+</header>
+<main id="main"></main>
+<dialog id="dlg"><div id="dlgBody"></div><p style="text-align:right;margin:12px 0 0"><button class="tab" onclick="dlg.close()">Close</button></p></dialog>
+
+<script>
+(() => {
+  const W = {high:3, med:2, low:1};
+  const LV = [["Normal",""],["Watch","l1"],["Busy","l2"],["Very busy","l3"]];
+  const IMP_LABEL = {high:"HIGH", med:"MED", low:"LOW"};
+  const store = {
+    get(k, d){ try{ const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } },
+    set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+  };
+  let data = null;
+  let view = store.get("view", "weeks");
+  let off = store.get("hidden", {});          // {cat:true} hidden
+  let offImp = store.get("hiddenImp", {});    // {low:true}
+  let monthOffset = 0;
+
+  const $ = s => document.querySelector(s);
+  const pad = n => String(n).padStart(2,"0");
+  const iso = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+  const parse = s => { const [y,m,d] = s.split("-").map(Number); return new Date(y, m-1, d); };
+  const addDays = (d, n) => { const x = new Date(d); x.setDate(x.getDate()+n); return x; };
+  const today = () => { const n = new Date(); return new Date(n.getFullYear(), n.getMonth(), n.getDate()); };
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+  function visible(e){ return !off[e.cat] && !offImp[e.impact]; }
+  function eventsOn(dayIso, all){
+    return data.events.filter(e => e.start <= dayIso && e.end >= dayIso && (all || visible(e)));
+  }
+  function level(list){
+    const s = list.reduce((a,e) => a + W[e.impact], 0);
+    return s === 0 ? 0 : s <= 2 ? 1 : s <= 4 ? 2 : 3;
+  }
+  function minus90(t){
+    const m = /^(\d{1,2}):(\d{2}) ?(AM|PM)$/i.exec(t || ""); if(!m) return null;
+    let h = (+m[1] % 12) + (m[3].toUpperCase()==="PM" ? 12 : 0), mi = +m[2] - 90 + h*60;
+    const hh = Math.floor(mi/60), mm = mi%60, ap = hh >= 12 ? "PM" : "AM";
+    return `${((hh+11)%12)+1}:${pad(mm)} ${ap}`;
+  }
+  function tip(e){
+    if(e.time === "All day") return "Expect heavy traffic all day — staff up across shifts.";
+    const nextDoor = /next door|Downtown/i.test(e.venue);
+    const pre = minus90(e.time);
+    if(nextDoor && pre) return `Pre-event rush likely ~${pre}–${e.time}; post-event bump after.`;
+    if(nextDoor) return "Next door — time not posted yet; watch for an update.";
+    if(e.impact === "low") return "Campus event — small effect downtown.";
+    return pre ? `Campus event — possible pre-game traffic ~${pre}, some post-game.` : "Campus event — possible pre/post-game traffic; time TBA.";
+  }
+  function evHTML(e){
+    const c = data.categories[e.cat].color;
+    const span = e.start !== e.end ? ` · ${fmtShort(parse(e.start))}–${fmtShort(parse(e.end))}` : "";
+    return `<div class="ev" style="--c:${c}">
+      <div class="t">${esc(e.title)}</div>
+      <div class="s"><span class="imp ${e.impact}">${IMP_LABEL[e.impact]}</span><span>${esc(e.time || "")}${span}</span><span>${esc(e.venue)}</span></div>
+      <div class="tip">${esc(tip(e))}</div>
+      ${e.note ? `<div class="s">${esc(e.note)}</div>` : ""}
+    </div>`;
+  }
+  const DOW = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+  const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  const fmtShort = d => `${MON[d.getMonth()]} ${d.getDate()}`;
+
+  function renderFilters(){
+    const counts = {};
+    data.events.forEach(e => counts[e.cat] = (counts[e.cat]||0) + 1);
+    let h = Object.entries(data.categories).map(([k,c]) =>
+      `<button class="chip" style="--c:${c.color}" aria-pressed="${!off[k]}" data-cat="${k}"><i></i>${esc(c.label)} <span class="n">${counts[k]||0}</span></button>`).join("");
+    h += `<span class="sep"></span>` + ["high","med","low"].map(k =>
+      `<button class="chip" aria-pressed="${!offImp[k]}" data-imp="${k}">${{high:"High impact",med:"Medium",low:"Low"}[k]}</button>`).join("");
+    h += `<button class="mini" data-all="1">Show all</button>`;
+    $("#filters").innerHTML = h;
+  }
+  function renderWeeks(){
+    const t = today(); let h = "";
+    for(let w=0; w<2; w++){
+      h += `<div class="week-h">${w===0 ? "This week" : "Next week"} · ${fmtShort(addDays(t, w*7))} – ${fmtShort(addDays(t, w*7+6))}</div><div class="days">`;
+      for(let i=0; i<7; i++){
+        const d = addDays(t, w*7+i), di = iso(d), list = eventsOn(di), L = level(list);
+        h += `<section class="day ${w===0&&i===0?"today":""}">
+          <div class="dh"><b>${i===0&&w===0 ? "Today" : DOW[d.getDay()]}</b><span class="dt">${fmtShort(d)}</span>
+          <span class="lvl ${LV[L][1]}">${LV[L][0]}</span></div>
+          ${list.length ? list.map(evHTML).join("") : `<div class="quiet">No tracked events</div>`}
+        </section>`;
+      }
+      h += `</div>`;
+    }
+    h += legend();
+    $("#main").innerHTML = h;
+  }
+  function renderMonth(){
+    const t = today(), first = new Date(t.getFullYear(), t.getMonth()+monthOffset, 1);
+    const startGrid = addDays(first, -first.getDay());
+    let h = `<div class="mhead"><button class="tab" data-m="-1" aria-label="Previous month">◀</button>
+      <h2>${first.toLocaleString("en-US",{month:"long",year:"numeric"})}</h2>
+      <button class="tab" data-m="1" aria-label="Next month">▶</button>
+      ${monthOffset ? `<button class="mini" data-m="0">This month</button>` : ""}</div>
+      <div class="grid">${DOW.map(d=>`<div class="dow">${d}</div>`).join("")}`;
+    for(let i=0; i<42; i++){
+      const d = addDays(startGrid, i); if(i>=35 && d.getMonth()!==first.getMonth()) break;
+      const di = iso(d), list = eventsOn(di), L = level(list);
+      h += `<button class="cell ${LV[L][1]} ${d.getMonth()!==first.getMonth()?"out":""} ${di===iso(t)?"today":""}" data-day="${di}">
+        <span class="num">${d.getDate()}</span>
+        ${list.slice(0,3).map(e=>`<span class="pill" style="--c:${data.categories[e.cat].color}">${esc(e.time && e.time!=="All day"&&e.time!=="TBA"&&e.time!=="TBD" ? e.time.replace(" PM","p").replace(" AM","a")+" " : "")}${esc(e.title)}</span>`).join("")}
+        ${list.length>3 ? `<span class="more">+${list.length-3} more</span>` : ""}
+        <span class="dots">${list.map(e=>`<i style="--c:${data.categories[e.cat].color}"></i>`).join("")}</span>
+      </button>`;
+    }
+    h += `</div>` + legend();
+    $("#main").innerHTML = h;
+  }
+  function legend(){
+    const hidden = data.events.filter(e => !visible(e)).length;
+    return `<div class="legend">Day rating adds up the visible events (High = 3, Medium = 2, Low = 1): Watch 1–2 · Busy 3–4 · Very busy 5+.
+      Rush times are estimates (about 90 minutes before start for events next door).
+      ${hidden ? `<b>${hidden} events hidden by your filters.</b>` : ""}
+      Filters are saved on this device only.</div>`;
+  }
+  function render(){
+    document.querySelectorAll(".tab[data-view]").forEach(b => b.setAttribute("aria-selected", b.dataset.view===view));
+    renderFilters();
+    view === "month" ? renderMonth() : renderWeeks();
+    $("#meta").textContent = `Schedule updated ${data.updated} · ${new Date().toLocaleString("en-US",{weekday:"short",month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})}`;
+  }
+
+  document.addEventListener("click", ev => {
+    const b = ev.target.closest("button"); if(!b) return;
+    if(b.dataset.view){ view = b.dataset.view; store.set("view", view); render(); }
+    else if(b.dataset.cat){ off[b.dataset.cat] = !off[b.dataset.cat]; store.set("hidden", off); render(); }
+    else if(b.dataset.imp){ offImp[b.dataset.imp] = !offImp[b.dataset.imp]; store.set("hiddenImp", offImp); render(); }
+    else if(b.dataset.all){ off = {}; offImp = {}; store.set("hidden", off); store.set("hiddenImp", offImp); render(); }
+    else if(b.dataset.m !== undefined){ monthOffset = b.dataset.m === "0" ? 0 : monthOffset + Number(b.dataset.m); renderMonth(); }
+    else if(b.dataset.day){
+      const d = parse(b.dataset.day), list = eventsOn(b.dataset.day), L = level(list);
+      $("#dlgBody").innerHTML = `<div class="dh"><b>${DOW[d.getDay()]} ${fmtShort(d)}</b><span class="lvl ${LV[L][1]}">${LV[L][0]}</span></div>
+        <div style="display:flex;flex-direction:column;gap:8px;margin-top:10px">${list.length ? list.map(evHTML).join("") : `<div class="quiet">No tracked events</div>`}</div>`;
+      $("#dlg").showModal();
+    }
+  });
+
+  async function load(){
+    try{
+      const r = await fetch("events.json", {cache:"no-store"});
+      if(!r.ok) throw new Error(r.status);
+      data = await r.json();
+      document.body.classList.remove("is-offline");
+      store.set("cache", data);
+    }catch(e){
+      data = data || store.get("cache", null);
+      document.body.classList.add("is-offline");
+      if(!data){ $("#main").innerHTML = `<p class="quiet">Couldn't load the schedule. Check the internet connection.</p>`; return; }
+    }
+    render();
+  }
+  // KDS stays open: refresh data hourly, redraw when the date rolls over
+  let lastDay = iso(today());
+  setInterval(load, 60*60*1000);
+  setInterval(() => { const d = iso(today()); if(d !== lastDay){ lastDay = d; monthOffset = 0; render(); } else if(data) $("#meta").textContent = `Schedule updated ${data.updated} · ${new Date().toLocaleString("en-US",{weekday:"short",month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})}`; }, 60*1000);
+  window.addEventListener("online", load);
+  load();
+  if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
+})();
+</script>
+</body>
+</html>

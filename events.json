@@ -1,0 +1,923 @@
+{
+ "updated": "2026-10-09",
+ "categories": {
+  "hockey": {
+   "label": "Hockey",
+   "color": "#4FA3FF"
+  },
+  "football": {
+   "label": "Bronco Football",
+   "color": "#FF7A1A"
+  },
+  "mbb": {
+   "label": "Men's Hoops",
+   "color": "#FFB547"
+  },
+  "wbb": {
+   "label": "Women's Hoops",
+   "color": "#F2D16B"
+  },
+  "music": {
+   "label": "Concerts & Shows",
+   "color": "#C77DFF"
+  },
+  "festival": {
+   "label": "Festivals & Tourneys",
+   "color": "#FF5C8A"
+  },
+  "convention": {
+   "label": "Conventions",
+   "color": "#3DDC97"
+  },
+  "downtown": {
+   "label": "Warehouse & Downtown",
+   "color": "#7FD1C7"
+  }
+ },
+ "events": [
+  {
+   "cat": "mbb",
+   "title": "Broncos men's hoops vs Idaho (exhibition)",
+   "start": "2026-10-10",
+   "end": "2026-10-10",
+   "time": "5:00 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Tahoe (preseason)",
+   "start": "2026-10-11",
+   "end": "2026-10-11",
+   "time": "4:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://idahocentralarena.com/events/"
+  },
+  {
+   "cat": "mbb",
+   "title": "Broncos men's hoops vs Washington (exhibition)",
+   "start": "2026-10-17",
+   "end": "2026-10-17",
+   "time": "7:00 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Allen Americans",
+   "start": "2026-10-23",
+   "end": "2026-10-23",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Allen Americans",
+   "start": "2026-10-24",
+   "end": "2026-10-24",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "mbb",
+   "title": "Broncos men's hoops vs Bismarck State (exhibition)",
+   "start": "2026-10-29",
+   "end": "2026-10-29",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "low",
+   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "football",
+   "title": "Broncos football vs Texas State",
+   "start": "2026-10-31",
+   "end": "2026-10-31",
+   "time": "8:00 PM",
+   "venue": "Albertsons Stadium (campus)",
+   "impact": "high",
+   "src": "https://broncosports.com/news/2026/5/27/football-boise-state-pac-12-announce-2026-conference-tv-selections-and-kickoff-times"
+  },
+  {
+   "cat": "wbb",
+   "title": "Broncos women's hoops vs Bushnell",
+   "start": "2026-11-02",
+   "end": "2026-11-02",
+   "time": "11:00 AM",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "low",
+   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Rapid City Rush",
+   "start": "2026-11-04",
+   "end": "2026-11-04",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "mbb",
+   "title": "Broncos men's hoops vs West Coast Baptist",
+   "start": "2026-11-04",
+   "end": "2026-11-04",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "med",
+   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "downtown",
+   "title": "First Thursday (downtown + Warehouse live music)",
+   "start": "2026-11-05",
+   "end": "2026-11-05",
+   "time": "5:00 PM",
+   "venue": "Downtown Boise / Warehouse",
+   "impact": "med",
+   "src": "https://www.downtownboise.org/events/first-thursday"
+  },
+  {
+   "cat": "wbb",
+   "title": "Broncos women's hoops vs Portland State",
+   "start": "2026-11-06",
+   "end": "2026-11-06",
+   "time": "6:30 PM",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "low",
+   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Rapid City Rush",
+   "start": "2026-11-06",
+   "end": "2026-11-06",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Rapid City Rush",
+   "start": "2026-11-07",
+   "end": "2026-11-07",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "mbb",
+   "title": "Broncos men's hoops vs Butler",
+   "start": "2026-11-08",
+   "end": "2026-11-08",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "med",
+   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "wbb",
+   "title": "Broncos women's hoops vs CSUN",
+   "start": "2026-11-10",
+   "end": "2026-11-10",
+   "time": "6:30 PM",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "low",
+   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+  },
+  {
+   "cat": "mbb",
+   "title": "Broncos men's hoops vs Oakland",
+   "start": "2026-11-11",
+   "end": "2026-11-11",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "med",
+   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "music",
+   "title": "Dwight Yoakam (concert)",
+   "start": "2026-11-12",
+   "end": "2026-11-12",
+   "time": "8:00 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://idahocentralarena.com/events/",
+   "note": "Doors 6:30 PM"
+  },
+  {
+   "cat": "wbb",
+   "title": "Broncos women's hoops vs Utah",
+   "start": "2026-11-13",
+   "end": "2026-11-13",
+   "time": "6:30 PM",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "low",
+   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+  },
+  {
+   "cat": "football",
+   "title": "Broncos football vs Oregon State",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "time": "4:00 PM",
+   "venue": "Albertsons Stadium (campus)",
+   "impact": "high",
+   "src": "https://broncosports.com/news/2026/5/27/football-boise-state-pac-12-announce-2026-conference-tv-selections-and-kickoff-times"
+  },
+  {
+   "cat": "wbb",
+   "title": "Broncos women's hoops vs Utah Tech",
+   "start": "2026-11-15",
+   "end": "2026-11-15",
+   "time": "1:00 PM",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "low",
+   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Maine Mariners",
+   "start": "2026-11-18",
+   "end": "2026-11-18",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Maine Mariners",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "mbb",
+   "title": "Broncos men's hoops vs Sam Houston",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "med",
+   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Maine Mariners",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "football",
+   "title": "Broncos football vs San Diego State",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "time": "7:30 PM",
+   "venue": "Albertsons Stadium (campus)",
+   "impact": "high",
+   "src": "https://broncosports.com/news/2026/5/27/football-boise-state-pac-12-announce-2026-conference-tv-selections-and-kickoff-times"
+  },
+  {
+   "cat": "wbb",
+   "title": "Broncos women's hoops vs UC Davis",
+   "start": "2026-11-22",
+   "end": "2026-11-22",
+   "time": "2:00 PM",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "low",
+   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+  },
+  {
+   "cat": "mbb",
+   "title": "Broncos men's hoops vs Idaho State",
+   "start": "2026-11-24",
+   "end": "2026-11-24",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "med",
+   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Rapid City Rush",
+   "start": "2026-12-02",
+   "end": "2026-12-02",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "downtown",
+   "title": "First Thursday (downtown + Warehouse live music)",
+   "start": "2026-12-03",
+   "end": "2026-12-03",
+   "time": "5:00 PM",
+   "venue": "Downtown Boise / Warehouse",
+   "impact": "med",
+   "src": "https://www.downtownboise.org/events/first-thursday"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Rapid City Rush",
+   "start": "2026-12-04",
+   "end": "2026-12-04",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Rapid City Rush",
+   "start": "2026-12-05",
+   "end": "2026-12-05",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Tulsa Oilers",
+   "start": "2026-12-09",
+   "end": "2026-12-09",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "wbb",
+   "title": "Broncos women's hoops vs Sacramento State",
+   "start": "2026-12-11",
+   "end": "2026-12-11",
+   "time": "6:30 PM",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "low",
+   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Tulsa Oilers",
+   "start": "2026-12-11",
+   "end": "2026-12-11",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Tulsa Oilers",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "mbb",
+   "title": "Broncos men's hoops vs Texas A&M-Corpus Christi",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "med",
+   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "wbb",
+   "title": "Broncos women's hoops vs Santa Clara",
+   "start": "2026-12-13",
+   "end": "2026-12-13",
+   "time": "2:00 PM",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "low",
+   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+  },
+  {
+   "cat": "mbb",
+   "title": "Broncos men's hoops vs Utah Valley",
+   "start": "2026-12-16",
+   "end": "2026-12-16",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "med",
+   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "wbb",
+   "title": "Broncos women's hoops vs UC Riverside",
+   "start": "2026-12-20",
+   "end": "2026-12-20",
+   "time": "2:00 PM",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "low",
+   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+  },
+  {
+   "cat": "wbb",
+   "title": "Broncos women's hoops vs Saint Mary's",
+   "start": "2026-12-22",
+   "end": "2026-12-22",
+   "time": "2:00 PM",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "low",
+   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+  },
+  {
+   "cat": "mbb",
+   "title": "Broncos men's hoops vs Lamar",
+   "start": "2026-12-29",
+   "end": "2026-12-29",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "med",
+   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs New Mexico Goatheads",
+   "start": "2026-12-30",
+   "end": "2026-12-30",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "wbb",
+   "title": "Broncos women's hoops vs South Dakota",
+   "start": "2026-12-31",
+   "end": "2026-12-31",
+   "time": "2:00 PM",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "low",
+   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs New Mexico Goatheads",
+   "start": "2027-01-01",
+   "end": "2027-01-01",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs New Mexico Goatheads",
+   "start": "2027-01-02",
+   "end": "2027-01-02",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "downtown",
+   "title": "First Thursday (downtown + Warehouse live music)",
+   "start": "2027-01-07",
+   "end": "2027-01-07",
+   "time": "5:00 PM",
+   "venue": "Downtown Boise / Warehouse",
+   "impact": "med",
+   "src": "https://www.downtownboise.org/events/first-thursday"
+  },
+  {
+   "cat": "mbb",
+   "title": "Broncos men's hoops vs Oregon State",
+   "start": "2027-01-09",
+   "end": "2027-01-09",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "med",
+   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "mbb",
+   "title": "Broncos men's hoops vs Washington State",
+   "start": "2027-01-13",
+   "end": "2027-01-13",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "med",
+   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "wbb",
+   "title": "Broncos women's hoops vs Washington State",
+   "start": "2027-01-14",
+   "end": "2027-01-14",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "low",
+   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+  },
+  {
+   "cat": "wbb",
+   "title": "Broncos women's hoops vs Gonzaga",
+   "start": "2027-01-16",
+   "end": "2027-01-16",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "low",
+   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Wichita Thunder",
+   "start": "2027-01-20",
+   "end": "2027-01-20",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Wichita Thunder",
+   "start": "2027-01-22",
+   "end": "2027-01-22",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Wichita Thunder",
+   "start": "2027-01-23",
+   "end": "2027-01-23",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "mbb",
+   "title": "Broncos men's hoops vs San Diego State",
+   "start": "2027-01-23",
+   "end": "2027-01-23",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "med",
+   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "wbb",
+   "title": "Broncos women's hoops vs Colorado State",
+   "start": "2027-01-24",
+   "end": "2027-01-24",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "low",
+   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+  },
+  {
+   "cat": "hockey",
+   "title": "ECHL All-Star Classic",
+   "start": "2027-01-26",
+   "end": "2027-01-27",
+   "time": "TBD",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "note": "League all-star event hosted in Boise; times TBD"
+  },
+  {
+   "cat": "mbb",
+   "title": "Broncos men's hoops vs Utah State",
+   "start": "2027-01-27",
+   "end": "2027-01-27",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "med",
+   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs New Mexico Goatheads",
+   "start": "2027-02-03",
+   "end": "2027-02-03",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "downtown",
+   "title": "First Thursday (downtown + Warehouse live music)",
+   "start": "2027-02-04",
+   "end": "2027-02-04",
+   "time": "5:00 PM",
+   "venue": "Downtown Boise / Warehouse",
+   "impact": "med",
+   "src": "https://www.downtownboise.org/events/first-thursday"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs New Mexico Goatheads",
+   "start": "2027-02-05",
+   "end": "2027-02-05",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs New Mexico Goatheads",
+   "start": "2027-02-06",
+   "end": "2027-02-06",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "wbb",
+   "title": "Broncos women's hoops vs Texas State",
+   "start": "2027-02-06",
+   "end": "2027-02-06",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "low",
+   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+  },
+  {
+   "cat": "mbb",
+   "title": "Broncos men's hoops vs Gonzaga",
+   "start": "2027-02-10",
+   "end": "2027-02-10",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "med",
+   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "wbb",
+   "title": "Broncos women's hoops vs Utah State",
+   "start": "2027-02-11",
+   "end": "2027-02-11",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "low",
+   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+  },
+  {
+   "cat": "mbb",
+   "title": "Broncos men's hoops vs Fresno State",
+   "start": "2027-02-13",
+   "end": "2027-02-13",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "med",
+   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "wbb",
+   "title": "Broncos women's hoops vs San Diego State",
+   "start": "2027-02-14",
+   "end": "2027-02-14",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "low",
+   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+  },
+  {
+   "cat": "mbb",
+   "title": "Broncos men's hoops vs Texas State",
+   "start": "2027-02-20",
+   "end": "2027-02-20",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "med",
+   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "wbb",
+   "title": "Broncos women's hoops vs Oregon State",
+   "start": "2027-02-24",
+   "end": "2027-02-24",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "low",
+   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Allen Americans",
+   "start": "2027-02-26",
+   "end": "2027-02-26",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Allen Americans",
+   "start": "2027-02-27",
+   "end": "2027-02-27",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "mbb",
+   "title": "Broncos men's hoops vs Colorado State",
+   "start": "2027-03-03",
+   "end": "2027-03-03",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "med",
+   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "downtown",
+   "title": "First Thursday (downtown + Warehouse live music)",
+   "start": "2027-03-04",
+   "end": "2027-03-04",
+   "time": "5:00 PM",
+   "venue": "Downtown Boise / Warehouse",
+   "impact": "med",
+   "src": "https://www.downtownboise.org/events/first-thursday"
+  },
+  {
+   "cat": "festival",
+   "title": "Big Sky Basketball Championships",
+   "start": "2027-03-05",
+   "end": "2027-03-10",
+   "time": "All day",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://www.idahonews.com/news/local/big-sky-basketball-tournaments-to-stay-in-boise-through-2031",
+   "note": "Men's + women's tournament; visiting fan groups often meet at the Warehouse"
+  },
+  {
+   "cat": "wbb",
+   "title": "Broncos women's hoops vs Fresno State",
+   "start": "2027-03-06",
+   "end": "2027-03-06",
+   "time": "TBA",
+   "venue": "ExtraMile Arena (campus)",
+   "impact": "low",
+   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Tulsa Oilers",
+   "start": "2027-03-12",
+   "end": "2027-03-12",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Tulsa Oilers",
+   "start": "2027-03-13",
+   "end": "2027-03-13",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Tahoe Knight Monsters",
+   "start": "2027-03-17",
+   "end": "2027-03-17",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Tahoe Knight Monsters",
+   "start": "2027-03-19",
+   "end": "2027-03-19",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Tahoe Knight Monsters",
+   "start": "2027-03-20",
+   "end": "2027-03-20",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Kalamazoo Wings",
+   "start": "2027-03-31",
+   "end": "2027-03-31",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "festival",
+   "title": "Treefort Music Fest",
+   "start": "2027-03-31",
+   "end": "2027-04-04",
+   "time": "All day",
+   "venue": "Downtown Boise",
+   "impact": "high",
+   "src": "https://treefortmusicfest.com/treefort-music-fest-2027-the-countdown-begins/",
+   "note": "5-day downtown festival; overlaps Steelheads Mar 31, Apr 2, Apr 3"
+  },
+  {
+   "cat": "downtown",
+   "title": "First Thursday (downtown + Warehouse live music)",
+   "start": "2027-04-01",
+   "end": "2027-04-01",
+   "time": "5:00 PM",
+   "venue": "Downtown Boise / Warehouse",
+   "impact": "med",
+   "src": "https://www.downtownboise.org/events/first-thursday"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Kalamazoo Wings",
+   "start": "2027-04-02",
+   "end": "2027-04-02",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Kalamazoo Wings",
+   "start": "2027-04-03",
+   "end": "2027-04-03",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Kansas City Mavericks",
+   "start": "2027-04-07",
+   "end": "2027-04-07",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Kansas City Mavericks",
+   "start": "2027-04-09",
+   "end": "2027-04-09",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "hockey",
+   "title": "Steelheads vs Kansas City Mavericks",
+   "start": "2027-04-10",
+   "end": "2027-04-10",
+   "time": "7:10 PM",
+   "venue": "Idaho Central Arena (next door)",
+   "impact": "high",
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  }
+ ]
+}
