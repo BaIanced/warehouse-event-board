@@ -16,6 +16,7 @@ SRC = {
     "firstthu": "https://www.downtownboise.org/events/first-thursday",
     "rcon": "https://lidarnews.com/event/r-con-boise-2026/",
     "artsnw": "https://artsnw.org/conference_overview",
+    "market": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
 }
 
 ICA = "Idaho Central Arena (next door)"
@@ -101,6 +102,14 @@ for d in ["2026-11-05","2026-12-03","2027-01-07","2027-02-04","2027-03-04","2027
     add("downtown", "First Thursday (downtown + Warehouse live music)", d, "5:00 PM",
         venue="Downtown Boise / Warehouse", impact="med", src="firstthu")
 
+# --- Weekly regulars (hidden by default on the board) ---
+d = dt.date(2026, 10, 10)
+while d <= dt.date(2026, 12, 19):          # 2026 season ends Dec 19
+    add("weekly", "Capital City Public Market", d.isoformat(), "9:30 AM",
+        venue="Grove Plaza / 8th St (outside the door)", impact="med", src="market",
+        note="Saturday market, 9:30 AM – 1:30 PM")
+    d += dt.timedelta(days=7)
+
 # sanity: every date parses, end >= start
 for e in events:
     s = dt.date.fromisoformat(e["start"]); en = dt.date.fromisoformat(e["end"])
@@ -118,6 +127,7 @@ out = {
         "festival": {"label": "Festivals & Tourneys","color": "#FF5C8A"},
         "convention":{"label": "Conventions",      "color": "#3DDC97"},
         "downtown": {"label": "Warehouse & Downtown","color": "#7FD1C7"},
+        "weekly":   {"label": "Weekly regulars",   "color": "#A3A9B3", "defaultOff": True},
     },
     "events": events,
 }

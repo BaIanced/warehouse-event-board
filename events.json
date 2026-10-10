@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09",
+ "updated": "2026-10-10",
  "categories": {
   "hockey": {
    "label": "Hockey",
@@ -32,6 +32,11 @@
   "downtown": {
    "label": "Warehouse & Downtown",
    "color": "#7FD1C7"
+  },
+  "weekly": {
+   "label": "Weekly regulars",
+   "color": "#A3A9B3",
+   "defaultOff": true
   }
  },
  "events": [
@@ -44,6 +49,17 @@
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
    "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "weekly",
+   "title": "Capital City Public Market",
+   "start": "2026-10-10",
+   "end": "2026-10-10",
+   "time": "9:30 AM",
+   "venue": "Grove Plaza / 8th St (outside the door)",
+   "impact": "med",
+   "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
   },
   {
    "cat": "hockey",
@@ -76,6 +92,17 @@
    "src": "https://broncosports.com/sports/mens-basketball/schedule"
   },
   {
+   "cat": "weekly",
+   "title": "Capital City Public Market",
+   "start": "2026-10-17",
+   "end": "2026-10-17",
+   "time": "9:30 AM",
+   "venue": "Grove Plaza / 8th St (outside the door)",
+   "impact": "med",
+   "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
+  },
+  {
    "cat": "convention",
    "title": "Arts Northwest conference",
    "start": "2026-10-19",
@@ -106,6 +133,17 @@
    "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
   },
   {
+   "cat": "weekly",
+   "title": "Capital City Public Market",
+   "start": "2026-10-24",
+   "end": "2026-10-24",
+   "time": "9:30 AM",
+   "venue": "Grove Plaza / 8th St (outside the door)",
+   "impact": "med",
+   "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
+  },
+  {
    "cat": "mbb",
    "title": "Broncos men's hoops vs Bismarck State (exhibition)",
    "start": "2026-10-29",
@@ -124,6 +162,17 @@
    "venue": "Albertsons Stadium (campus)",
    "impact": "high",
    "src": "https://broncosports.com/news/2026/5/27/football-boise-state-pac-12-announce-2026-conference-tv-selections-and-kickoff-times"
+  },
+  {
+   "cat": "weekly",
+   "title": "Capital City Public Market",
+   "start": "2026-10-31",
+   "end": "2026-10-31",
+   "time": "9:30 AM",
+   "venue": "Grove Plaza / 8th St (outside the door)",
+   "impact": "med",
+   "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
   },
   {
    "cat": "wbb",
@@ -196,6 +245,17 @@
    "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
   },
   {
+   "cat": "weekly",
+   "title": "Capital City Public Market",
+   "start": "2026-11-07",
+   "end": "2026-11-07",
+   "time": "9:30 AM",
+   "venue": "Grove Plaza / 8th St (outside the door)",
+   "impact": "med",
+   "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
+  },
+  {
    "cat": "mbb",
    "title": "Broncos men's hoops vs Butler",
    "start": "2026-11-08",
@@ -255,6 +315,17 @@
    "venue": "Albertsons Stadium (campus)",
    "impact": "high",
    "src": "https://broncosports.com/news/2026/5/27/football-boise-state-pac-12-announce-2026-conference-tv-selections-and-kickoff-times"
+  },
+  {
+   "cat": "weekly",
+   "title": "Capital City Public Market",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "time": "9:30 AM",
+   "venue": "Grove Plaza / 8th St (outside the door)",
+   "impact": "med",
+   "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
   },
   {
    "cat": "wbb",
@@ -317,6 +388,17 @@
    "src": "https://broncosports.com/news/2026/5/27/football-boise-state-pac-12-announce-2026-conference-tv-selections-and-kickoff-times"
   },
   {
+   "cat": "weekly",
+   "title": "Capital City Public Market",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "time": "9:30 AM",
+   "venue": "Grove Plaza / 8th St (outside the door)",
+   "impact": "med",
+   "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
+  },
+  {
    "cat": "wbb",
    "title": "Broncos women's hoops vs UC Davis",
    "start": "2026-11-22",
@@ -335,6 +417,17 @@
    "venue": "ExtraMile Arena (campus)",
    "impact": "med",
    "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "weekly",
+   "title": "Capital City Public Market",
+   "start": "2026-11-28",
+   "end": "2026-11-28",
+   "time": "9:30 AM",
+   "venue": "Grove Plaza / 8th St (outside the door)",
+   "impact": "med",
+   "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
   },
   {
    "cat": "hockey",
@@ -377,6 +470,17 @@
    "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
   },
   {
+   "cat": "weekly",
+   "title": "Capital City Public Market",
+   "start": "2026-12-05",
+   "end": "2026-12-05",
+   "time": "9:30 AM",
+   "venue": "Grove Plaza / 8th St (outside the door)",
+   "impact": "med",
+   "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
+  },
+  {
    "cat": "hockey",
    "title": "Steelheads vs Tulsa Oilers",
    "start": "2026-12-09",
@@ -417,6 +521,17 @@
    "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
   },
   {
+   "cat": "weekly",
+   "title": "Capital City Public Market",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "time": "9:30 AM",
+   "venue": "Grove Plaza / 8th St (outside the door)",
+   "impact": "med",
+   "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
+  },
+  {
    "cat": "mbb",
    "title": "Broncos men's hoops vs Texas A&M-Corpus Christi",
    "start": "2026-12-12",
@@ -445,6 +560,17 @@
    "venue": "ExtraMile Arena (campus)",
    "impact": "med",
    "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "weekly",
+   "title": "Capital City Public Market",
+   "start": "2026-12-19",
+   "end": "2026-12-19",
+   "time": "9:30 AM",
+   "venue": "Grove Plaza / 8th St (outside the door)",
+   "impact": "med",
+   "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
   },
   {
    "cat": "wbb",

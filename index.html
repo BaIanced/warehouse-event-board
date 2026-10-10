@@ -64,7 +64,18 @@ main{padding:18px 16px 40px;max-width:1000px;margin:0 auto}
 .card.past{opacity:.45}
 .card.past .tm::after{content:"Done";display:block;font-size:.75rem;color:var(--dim);margin-top:2px}
 .empty{background:var(--panel);border:1px dashed var(--line);border-radius:16px;padding:28px;text-align:center;color:var(--dim);font-size:1.2rem;margin-top:16px}
-.next{margin-top:18px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 18px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+/* Today zone: tinted in today's status color, fading out at the bottom so "later" reads as separate */
+.todayzone{padding:14px 14px 56px;border-radius:24px;
+  background:linear-gradient(180deg,var(--tint) 0%,var(--tint) 60%,rgba(17,20,24,0) 100%)}
+.todayzone.z0{--tint:rgba(60,72,88,.35)}
+.todayzone.z1{--tint:rgba(75,105,45,.35)}
+.todayzone.z2{--tint:rgba(150,100,20,.35)}
+.todayzone.z3{--tint:rgba(170,40,60,.35)}
+.later-h{display:flex;align-items:center;gap:14px;color:var(--dim);text-transform:uppercase;letter-spacing:.14em;
+  font-size:.8rem;font-weight:700;margin:2px 0 4px}
+.later-h::before,.later-h::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,rgba(46,55,68,0),var(--line),rgba(46,55,68,0))}
+.later .next{background:transparent;border-style:dashed;opacity:.8}
+.next{margin-top:14px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 18px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 .next .lab{color:var(--dim);font-size:.85rem;text-transform:uppercase;letter-spacing:.08em}
 .next b{font-size:1.1rem}
 
@@ -151,7 +162,9 @@ body.is-offline .offline{display:block}
   const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   const fmtShort = d => `${MON[d.getMonth()]} ${d.getDate()}`;
 
-  const visible = e => !off[e.cat] && !offImp[e.impact];
+  // Categories marked defaultOff (weekly regulars) stay hidden until someone turns them on
+  const isOff = k => off[k] === undefined ? !!(data.categories[k] && data.categories[k].defaultOff) : !!off[k];
+  const visible = e => !isOff(e.cat) && !offImp[e.impact];
   function eventsOn(dayIso){
     return data.events.filter(e => e.start <= dayIso && e.end >= dayIso && visible(e))
       .sort((a,b) => (mins(a.time) ?? -1) - (mins(b.time) ?? -1));
@@ -172,8 +185,9 @@ body.is-offline .offline{display:block}
   }
   function tip(e){
     if(e.cat === "convention") return "Convention across the street — bigger lunch rush and evening walk-ins.";
+    if(e.cat === "weekly") return "Right outside the door — busy late morning through lunch.";
     if(e.time === "All day") return e.impact === "max" ? "Huge crowds all day — staff up every shift." : "Extra traffic all day.";
-    const close = /next door|across|Downtown/i.test(e.venue), m = mins(e.time);
+    const close = /next door|across|outside|Downtown/i.test(e.venue), m = mins(e.time);
     if(close && m != null) return `Rush likely ${clock(m-90)} – ${e.time}, then again after it ends.`;
     if(close) return "Next door — start time not posted yet.";
     if(e.impact === "low") return "On campus — small effect downtown.";
@@ -199,11 +213,12 @@ body.is-offline .offline{display:block}
     const t = today(), list = eventsOn(iso(t)), L = level(list);
     const sum = list.length === 0 ? "No events nearby today"
       : list.length === 1 ? "1 event today" : `${list.length} events today`;
-    let h = `<section class="hero st ${LV[L][1]}">
+    let h = `<div class="todayzone z${L}"><section class="hero st ${LV[L][1]}">
       <div><div class="when">Today · ${DOWL[t.getDay()]}, ${fmtShort(t)}</div><div class="big">${LV[L][0]}</div></div>
       <div class="sum">${sum}</div></section>`;
     h += list.length ? `<div class="list">${list.map(e => card(e, true)).join("")}</div>`
                      : `<div class="empty">Regular staffing — nothing tracked nearby today.</div>`;
+    h += `</div><div class="later-h">Coming up · not today</div><div class="later">`;
     // Look ahead: tomorrow, then the next Busy+ day within 14 days
     const tm = addDays(t,1), tl = eventsOn(iso(tm)), TL = level(tl);
     h += `<div class="next"><span class="lab">Tomorrow</span><span class="pillst st ${LV[TL][1]}">${LV[TL][0]}</span>
@@ -216,7 +231,7 @@ body.is-offline .offline{display:block}
         break;
       }
     }
-    $("#main").innerHTML = h + legend();
+    $("#main").innerHTML = h + `</div>` + legend();
   }
 
   function renderWeek(){
@@ -256,13 +271,15 @@ body.is-offline .offline{display:block}
   }
 
   function legend(extra){
-    const hidden = data.events.filter(e => !visible(e)).length;
+    const hidden = data.events.filter(e => !visible(e) && !(off[e.cat] === undefined && data.categories[e.cat].defaultOff)).length;
     return `<div class="legend">${extra ? extra + " " : ""}Normal → Watch → Busy → Very busy is based on how many events there are and how big.
       Rush times are estimates. ${hidden ? `<b>${hidden} events hidden by filters.</b> ` : ""}Schedule updated ${esc(data.updated)}.</div>`;
   }
 
   function renderFilters(){
-    const nHidden = Object.values(off).filter(Boolean).length + Object.values(offImp).filter(Boolean).length;
+    // Count only filters someone actually changed (a default-off category isn't "off" by choice)
+    const nHidden = Object.keys(data.categories).filter(k => isOff(k) && !data.categories[k].defaultOff).length
+      + Object.values(offImp).filter(Boolean).length;
     const fb = $("#fbtn");
     fb.textContent = filtersOpen ? "Close filters" : nHidden ? `Filters · ${nHidden} off` : "Filters";
     fb.classList.toggle("on", nHidden > 0);
@@ -270,7 +287,7 @@ body.is-offline .offline{display:block}
     $("#filters").classList.toggle("open", filtersOpen);
     if(!filtersOpen) return;
     let h = Object.entries(data.categories).map(([k,c]) =>
-      `<button class="chip" style="--c:${c.color}" aria-pressed="${!off[k]}" data-cat="${k}"><i></i>${esc(c.label)}</button>`).join("");
+      `<button class="chip" style="--c:${c.color}" aria-pressed="${!isOff(k)}" data-cat="${k}"><i></i>${esc(c.label)}</button>`).join("");
     h += `<span class="sep"></span>` + ["max","high","med","low"].map(k =>
       `<button class="chip" aria-pressed="${!offImp[k]}" data-imp="${k}">${{max:"Huge",high:"High",med:"Medium",low:"Low"}[k]}</button>`).join("");
     h += `<button class="mini" data-all="1">Show all</button>`;
@@ -287,9 +304,10 @@ body.is-offline .offline{display:block}
     const b = ev.target.closest("button"); if(!b || b.disabled) return;
     if(b.id === "fbtn"){ filtersOpen = !filtersOpen; renderFilters(); }
     else if(b.dataset.view){ view = b.dataset.view; weekOffset = 0; monthOffset = 0; store.set("view2", view); render(); }
-    else if(b.dataset.cat){ off[b.dataset.cat] = !off[b.dataset.cat]; store.set("hidden", off); render(); }
+    else if(b.dataset.cat){ off[b.dataset.cat] = !isOff(b.dataset.cat); store.set("hidden", off); render(); }
     else if(b.dataset.imp){ offImp[b.dataset.imp] = !offImp[b.dataset.imp]; store.set("hiddenImp", offImp); render(); }
-    else if(b.dataset.all){ off = {}; offImp = {}; store.set("hidden", off); store.set("hiddenImp", offImp); render(); }
+    else if(b.dataset.all){ off = Object.fromEntries(Object.keys(data.categories).map(k => [k, false])); offImp = {};
+      store.set("hidden", off); store.set("hiddenImp", offImp); render(); }
     else if(b.dataset.w){ weekOffset = Math.max(0, weekOffset + Number(b.dataset.w)); renderWeek(); }
     else if(b.dataset.m){ monthOffset += Number(b.dataset.m); renderMonth(); }
     else if(b.dataset.day){
