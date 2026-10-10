@@ -56,6 +56,16 @@
    "src": "https://idahocentralarena.com/events/"
   },
   {
+   "cat": "convention",
+   "title": "R-CON Boise (conference)",
+   "start": "2026-10-12",
+   "end": "2026-10-15",
+   "time": "All day",
+   "venue": "Boise Centre (across the street)",
+   "impact": "med",
+   "src": "https://lidarnews.com/event/r-con-boise-2026/"
+  },
+  {
    "cat": "mbb",
    "title": "Broncos men's hoops vs Washington (exhibition)",
    "start": "2026-10-17",
@@ -64,6 +74,16 @@
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
    "src": "https://broncosports.com/sports/mens-basketball/schedule"
+  },
+  {
+   "cat": "convention",
+   "title": "Arts Northwest conference",
+   "start": "2026-10-19",
+   "end": "2026-10-22",
+   "time": "All day",
+   "venue": "Boise Centre + Egyptian Theatre",
+   "impact": "med",
+   "src": "https://artsnw.org/conference_overview"
   },
   {
    "cat": "hockey",
@@ -774,7 +794,7 @@
    "end": "2027-03-10",
    "time": "All day",
    "venue": "Idaho Central Arena (next door)",
-   "impact": "high",
+   "impact": "max",
    "src": "https://www.idahonews.com/news/local/big-sky-basketball-tournaments-to-stay-in-boise-through-2031",
    "note": "Men's + women's tournament; visiting fan groups often meet at the Warehouse"
   },
@@ -855,7 +875,7 @@
    "end": "2027-04-04",
    "time": "All day",
    "venue": "Downtown Boise",
-   "impact": "high",
+   "impact": "max",
    "src": "https://treefortmusicfest.com/treefort-music-fest-2027-the-countdown-begins/",
    "note": "5-day downtown festival; overlaps Steelheads Mar 31, Apr 2, Apr 3"
   },

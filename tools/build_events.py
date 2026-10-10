@@ -14,6 +14,8 @@ SRC = {
     "treefort": "https://treefortmusicfest.com/treefort-music-fest-2027-the-countdown-begins/",
     "bigsky": "https://www.idahonews.com/news/local/big-sky-basketball-tournaments-to-stay-in-boise-through-2031",
     "firstthu": "https://www.downtownboise.org/events/first-thursday",
+    "rcon": "https://lidarnews.com/event/r-con-boise-2026/",
+    "artsnw": "https://artsnw.org/conference_overview",
 }
 
 ICA = "Idaho Central Arena (next door)"
@@ -83,9 +85,16 @@ add("music", "Dwight Yoakam (concert)", "2026-11-12", "8:00 PM", venue=ICA, impa
 
 # --- Festivals & tournaments ---
 add("festival", "Treefort Music Fest", "2027-03-31", "All day", end="2027-04-04", venue="Downtown Boise",
-    impact="high", src="treefort", note="5-day downtown festival; overlaps Steelheads Mar 31, Apr 2, Apr 3")
+    impact="max", src="treefort", note="5-day downtown festival; overlaps Steelheads Mar 31, Apr 2, Apr 3")
 add("festival", "Big Sky Basketball Championships", "2027-03-05", "All day", end="2027-03-10", venue=ICA,
-    impact="high", src="bigsky", note="Men's + women's tournament; visiting fan groups often meet at the Warehouse")
+    impact="max", src="bigsky", note="Men's + women's tournament; visiting fan groups often meet at the Warehouse")
+
+# --- Conventions (Boise Centre, across the street) ---
+# Boise Centre's own calendar is empty right now, so these come from organizer pages.
+add("convention", "R-CON Boise (conference)", "2026-10-12", "All day", end="2026-10-15",
+    venue="Boise Centre (across the street)", impact="med", src="rcon")
+add("convention", "Arts Northwest conference", "2026-10-19", "All day", end="2026-10-22",
+    venue="Boise Centre + Egyptian Theatre", impact="med", src="artsnw")
 
 # --- Warehouse & downtown (non-weekly) ---
 for d in ["2026-11-05","2026-12-03","2027-01-07","2027-02-04","2027-03-04","2027-04-01"]:

@@ -56,7 +56,7 @@ main{padding:14px 16px 40px;max-width:1400px;margin:0 auto}
 .ev .s{color:var(--dim);font-size:.8rem;margin-top:3px;display:flex;flex-wrap:wrap;gap:4px 10px}
 .ev .tip{font-size:.8rem;margin-top:5px;color:#ffd9b8}
 .imp{font-size:.68rem;font-weight:800;letter-spacing:.06em;padding:1px 6px;border-radius:4px;background:#333c48;color:var(--dim)}
-.imp.high{background:#5a1d26;color:#ff9aa4}.imp.med{background:#4f3a10;color:#ffcc70}
+.imp.max{background:#ff5c8a;color:#1a0d12}.imp.high{background:#5a1d26;color:#ff9aa4}.imp.med{background:#4f3a10;color:#ffcc70}
 .quiet{color:var(--dim);font-size:.85rem;font-style:italic}
 /* month */
 .mhead{display:flex;align-items:center;gap:10px;margin:6px 0 10px}
@@ -105,9 +105,9 @@ body.is-offline .offline{display:block}
 
 <script>
 (() => {
-  const W = {high:3, med:2, low:1};
+  const W = {max:5, high:3, med:2, low:1};
   const LV = [["Normal",""],["Watch","l1"],["Busy","l2"],["Very busy","l3"]];
-  const IMP_LABEL = {high:"HIGH", med:"MED", low:"LOW"};
+  const IMP_LABEL = {max:"HUGE", high:"HIGH", med:"MED", low:"LOW"};
   const store = {
     get(k, d){ try{ const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } },
     set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
@@ -141,8 +141,9 @@ body.is-offline .offline{display:block}
     return `${((hh+11)%12)+1}:${pad(mm)} ${ap}`;
   }
   function tip(e){
-    if(e.time === "All day") return "Expect heavy traffic all day — staff up across shifts.";
-    const nextDoor = /next door|Downtown/i.test(e.venue);
+    if(e.cat === "convention") return "Convention across the street — expect a bigger weekday lunch rush and evening walk-ins.";
+    if(e.time === "All day") return e.impact === "max" ? "Huge crowds all day — staff up across every shift." : "Expect extra traffic all day.";
+    const nextDoor = /next door|across|Downtown/i.test(e.venue);
     const pre = minus90(e.time);
     if(nextDoor && pre) return `Pre-event rush likely ~${pre}–${e.time}; post-event bump after.`;
     if(nextDoor) return "Next door — time not posted yet; watch for an update.";
@@ -168,8 +169,8 @@ body.is-offline .offline{display:block}
     data.events.forEach(e => counts[e.cat] = (counts[e.cat]||0) + 1);
     let h = Object.entries(data.categories).map(([k,c]) =>
       `<button class="chip" style="--c:${c.color}" aria-pressed="${!off[k]}" data-cat="${k}"><i></i>${esc(c.label)} <span class="n">${counts[k]||0}</span></button>`).join("");
-    h += `<span class="sep"></span>` + ["high","med","low"].map(k =>
-      `<button class="chip" aria-pressed="${!offImp[k]}" data-imp="${k}">${{high:"High impact",med:"Medium",low:"Low"}[k]}</button>`).join("");
+    h += `<span class="sep"></span>` + ["max","high","med","low"].map(k =>
+      `<button class="chip" aria-pressed="${!offImp[k]}" data-imp="${k}">${{max:"Huge",high:"High impact",med:"Medium",low:"Low"}[k]}</button>`).join("");
     h += `<button class="mini" data-all="1">Show all</button>`;
     $("#filters").innerHTML = h;
   }
@@ -213,7 +214,7 @@ body.is-offline .offline{display:block}
   }
   function legend(){
     const hidden = data.events.filter(e => !visible(e)).length;
-    return `<div class="legend">Day rating adds up the visible events (High = 3, Medium = 2, Low = 1): Watch 1–2 · Busy 3–4 · Very busy 5+.
+    return `<div class="legend">Day rating adds up the visible events (Huge = 5, High = 3, Medium = 2, Low = 1): Watch 1–2 · Busy 3–4 · Very busy 5+.
       Rush times are estimates (about 90 minutes before start for events next door).
       ${hidden ? `<b>${hidden} events hidden by your filters.</b>` : ""}
       Filters are saved on this device only.</div>`;
