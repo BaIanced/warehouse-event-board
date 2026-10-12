@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10",
+ "updated": "2026-10-12",
  "categories": {
   "hockey": {
    "label": "Hockey",
@@ -193,6 +193,16 @@
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
    "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "convention",
+   "title": "Idaho School Boards Association convention",
+   "start": "2026-11-04",
+   "end": "2026-11-06",
+   "time": "All day",
+   "venue": "Boise Centre (across the street)",
+   "impact": "med",
+   "src": "https://www.idsba.org/convention/"
   },
   {
    "cat": "mbb",
@@ -407,6 +417,17 @@
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
    "src": "https://broncosports.com/sports/womens-basketball/schedule"
+  },
+  {
+   "cat": "convention",
+   "title": "Saint Alphonsus Festival of Trees",
+   "start": "2026-11-24",
+   "end": "2026-11-29",
+   "time": "5:00 PM",
+   "venue": "Boise Centre (across the street)",
+   "impact": "med",
+   "src": "https://www.saintalphonsus.org/foundation/events/festival-of-trees/admission-and-attractions",
+   "note": "Gala Tue 11/24; public hours Wed 10-8, Thu (Thanksgiving) 2-6, Fri 10-9, Sat 10-8, Sun 10-5; fashion show Mon 11/30"
   },
   {
    "cat": "mbb",

@@ -16,6 +16,8 @@ SRC = {
     "firstthu": "https://www.downtownboise.org/events/first-thursday",
     "rcon": "https://lidarnews.com/event/r-con-boise-2026/",
     "artsnw": "https://artsnw.org/conference_overview",
+    "isba": "https://www.idsba.org/convention/",
+    "fot": "https://www.saintalphonsus.org/foundation/events/festival-of-trees/admission-and-attractions",
     "market": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
 }
 
@@ -96,6 +98,11 @@ add("convention", "R-CON Boise (conference)", "2026-10-12", "All day", end="2026
     venue="Boise Centre (across the street)", impact="med", src="rcon")
 add("convention", "Arts Northwest conference", "2026-10-19", "All day", end="2026-10-22",
     venue="Boise Centre + Egyptian Theatre", impact="med", src="artsnw")
+add("convention", "Idaho School Boards Association convention", "2026-11-04", "All day", end="2026-11-06",
+    venue="Boise Centre (across the street)", impact="med", src="isba")
+add("convention", "Saint Alphonsus Festival of Trees", "2026-11-24", "5:00 PM", end="2026-11-29",
+    venue="Boise Centre (across the street)", impact="med", src="fot",
+    note="Gala Tue 11/24; public hours Wed 10-8, Thu (Thanksgiving) 2-6, Fri 10-9, Sat 10-8, Sun 10-5; fashion show Mon 11/30")
 
 # --- Warehouse & downtown (non-weekly) ---
 for d in ["2026-11-05","2026-12-03","2027-01-07","2027-02-04","2027-03-04","2027-04-01"]:
