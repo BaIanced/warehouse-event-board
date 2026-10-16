@@ -18,6 +18,8 @@ SRC = {
     "artsnw": "https://artsnw.org/conference_overview",
     "isba": "https://www.idsba.org/convention/",
     "fot": "https://www.saintalphonsus.org/foundation/events/festival-of-trees/admission-and-attractions",
+    "warehouse": "https://www.warehouseboise.com/",   # Warehouse one-offs (also /entertainment, FB/IG)
+    "taste": "https://downtownboise.org/events/taste",
     "market": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
 }
 
@@ -106,8 +108,21 @@ add("convention", "Saint Alphonsus Festival of Trees", "2026-11-24", "5:00 PM", 
 
 # --- Warehouse & downtown (non-weekly) ---
 for d in ["2026-11-05","2026-12-03","2027-01-07","2027-02-04","2027-03-04","2027-04-01"]:
+    acts = {"2026-11-05": "Spencer Batt", "2026-12-03": "Jake Ransom"}   # from warehouseboise.com
     add("downtown", "First Thursday (downtown + Warehouse live music)", d, "5:00 PM",
-        venue="Downtown Boise / Warehouse", impact="med", src="firstthu")
+        venue="Downtown Boise / Warehouse", impact="med", src="firstthu",
+        note=f"Warehouse live music 5-8 PM: {acts[d]}" if d in acts else "")
+
+# Warehouse Food Hall one-offs (warehouseboise.com; check every week)
+WH = "Warehouse Food Hall (here)"
+add("downtown", "Halloween Hangout at the Warehouse", "2026-10-19", "5:30 PM", venue=WH, impact="med",
+    src="warehouse", note="5:30-8:30 PM; DJ, kids' activities, costume contest. Free, family-friendly")
+for d, t, nt in [("2026-10-17","5:00 PM","5-8 PM"),("2026-11-21","4:00 PM","4-7 PM"),("2026-12-05","4:00 PM","4-7 PM")]:
+    add("downtown", "SCION THE BAND live at the Warehouse", d, t, venue=WH, impact="low", src="warehouse",
+        note=f"Live jazz/blues/funk, {nt}")
+add("downtown", "Taste of Downtown Boise", "2026-10-16", "All day", end="2026-10-25",
+    venue="Downtown Boise (Warehouse vendors participating)", impact="med", src="taste",
+    note="10-day dining promo; Loading Dock, Brotherly Love, Totally Smashed, CAMP specials $14 or less")
 
 # --- Weekly regulars (hidden by default on the board) ---
 d = dt.date(2026, 10, 10)

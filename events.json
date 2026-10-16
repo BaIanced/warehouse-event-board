@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12",
+ "updated": "2026-10-16",
  "categories": {
   "hockey": {
    "label": "Hockey",
@@ -82,6 +82,28 @@
    "src": "https://lidarnews.com/event/r-con-boise-2026/"
   },
   {
+   "cat": "downtown",
+   "title": "Taste of Downtown Boise",
+   "start": "2026-10-16",
+   "end": "2026-10-25",
+   "time": "All day",
+   "venue": "Downtown Boise (Warehouse vendors participating)",
+   "impact": "med",
+   "src": "https://downtownboise.org/events/taste",
+   "note": "10-day dining promo; Loading Dock, Brotherly Love, Totally Smashed, CAMP specials $14 or less"
+  },
+  {
+   "cat": "downtown",
+   "title": "SCION THE BAND live at the Warehouse",
+   "start": "2026-10-17",
+   "end": "2026-10-17",
+   "time": "5:00 PM",
+   "venue": "Warehouse Food Hall (here)",
+   "impact": "low",
+   "src": "https://www.warehouseboise.com/",
+   "note": "Live jazz/blues/funk, 5-8 PM"
+  },
+  {
    "cat": "mbb",
    "title": "Broncos men's hoops vs Washington (exhibition)",
    "start": "2026-10-17",
@@ -101,6 +123,17 @@
    "impact": "med",
    "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
    "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
+  },
+  {
+   "cat": "downtown",
+   "title": "Halloween Hangout at the Warehouse",
+   "start": "2026-10-19",
+   "end": "2026-10-19",
+   "time": "5:30 PM",
+   "venue": "Warehouse Food Hall (here)",
+   "impact": "med",
+   "src": "https://www.warehouseboise.com/",
+   "note": "5:30-8:30 PM; DJ, kids' activities, costume contest. Free, family-friendly"
   },
   {
    "cat": "convention",
@@ -222,7 +255,8 @@
    "time": "5:00 PM",
    "venue": "Downtown Boise / Warehouse",
    "impact": "med",
-   "src": "https://www.downtownboise.org/events/first-thursday"
+   "src": "https://www.downtownboise.org/events/first-thursday",
+   "note": "Warehouse live music 5-8 PM: Spencer Batt"
   },
   {
    "cat": "wbb",
@@ -378,6 +412,17 @@
    "src": "https://broncosports.com/sports/mens-basketball/schedule"
   },
   {
+   "cat": "downtown",
+   "title": "SCION THE BAND live at the Warehouse",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "time": "4:00 PM",
+   "venue": "Warehouse Food Hall (here)",
+   "impact": "low",
+   "src": "https://www.warehouseboise.com/",
+   "note": "Live jazz/blues/funk, 4-7 PM"
+  },
+  {
    "cat": "hockey",
    "title": "Steelheads vs Maine Mariners",
    "start": "2026-11-21",
@@ -468,7 +513,8 @@
    "time": "5:00 PM",
    "venue": "Downtown Boise / Warehouse",
    "impact": "med",
-   "src": "https://www.downtownboise.org/events/first-thursday"
+   "src": "https://www.downtownboise.org/events/first-thursday",
+   "note": "Warehouse live music 5-8 PM: Jake Ransom"
   },
   {
    "cat": "hockey",
@@ -479,6 +525,17 @@
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
    "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+  },
+  {
+   "cat": "downtown",
+   "title": "SCION THE BAND live at the Warehouse",
+   "start": "2026-12-05",
+   "end": "2026-12-05",
+   "time": "4:00 PM",
+   "venue": "Warehouse Food Hall (here)",
+   "impact": "low",
+   "src": "https://www.warehouseboise.com/",
+   "note": "Live jazz/blues/funk, 4-7 PM"
   },
   {
    "cat": "hockey",
