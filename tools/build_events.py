@@ -87,7 +87,7 @@ for d, opp in [("2026-11-04","West Coast Baptist"),("2026-11-08","Butler"),("202
                ("2027-01-13","Washington State"),("2027-01-23","San Diego State"),("2027-01-27","Utah State"),
                ("2027-02-10","Gonzaga"),("2027-02-13","Fresno State"),("2027-02-20","Texas State"),
                ("2027-03-03","Colorado State")]:
-    add("mbb", f"Broncos men's hoops vs {opp}", d, "TBA", venue=EMA, impact="med", src="mbb")
+    add("mbb", f"Broncos men's hoops vs {opp}", d, "TBA", venue=EMA, impact="low", src="mbb")
 
 # --- Boise State women's basketball (home only) ---
 for d, opp, t in [("2026-11-02","Bushnell","11:00 AM"),("2026-11-06","Portland State","6:30 PM"),
