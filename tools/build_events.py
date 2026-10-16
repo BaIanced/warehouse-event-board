@@ -20,6 +20,7 @@ SRC = {
     "fot": "https://www.saintalphonsus.org/foundation/events/festival-of-trees/admission-and-attractions",
     "warehouse": "https://www.warehouseboise.com/",   # Warehouse one-offs (also /entertainment, FB/IG)
     "taste": "https://downtownboise.org/events/taste",
+    "mining": "https://www.sharedaudiences.com/events/idaho-mining-conference-2026",
     "market": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
 }
 
@@ -116,6 +117,9 @@ add("convention", "R-CON Boise (conference)", "2026-10-12", "All day", end="2026
     venue="Boise Centre (across the street)", impact="med", src="rcon")
 add("convention", "Arts Northwest conference", "2026-10-19", "All day", end="2026-10-22",
     venue="Boise Centre + Egyptian Theatre", impact="med", src="artsnw")
+add("convention", "Idaho Mining Conference", "2026-10-26", "All day", end="2026-10-27",
+    venue="Boise Centre (across the street)", impact="med", src="mining",
+    note="Dates match the Warehouse newsletter (9/28); listing site is not the organizer")
 add("convention", "Idaho School Boards Association convention", "2026-11-04", "All day", end="2026-11-06",
     venue="Boise Centre (across the street)", impact="med", src="isba")
 add("convention", "Saint Alphonsus Festival of Trees", "2026-11-24", "5:00 PM", end="2026-11-29",

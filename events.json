@@ -177,6 +177,17 @@
    "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
   },
   {
+   "cat": "convention",
+   "title": "Idaho Mining Conference",
+   "start": "2026-10-26",
+   "end": "2026-10-27",
+   "time": "All day",
+   "venue": "Boise Centre (across the street)",
+   "impact": "med",
+   "src": "https://www.sharedaudiences.com/events/idaho-mining-conference-2026",
+   "note": "Dates match the Warehouse newsletter (9/28); listing site is not the organizer"
+  },
+  {
    "cat": "mbb",
    "title": "Broncos men's hoops vs Bismarck State (exhibition)",
    "start": "2026-10-29",
