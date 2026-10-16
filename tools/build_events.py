@@ -23,6 +23,20 @@ SRC = {
     "market": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
 }
 
+# Extra sources to re-check every week (not tied to a row yet). Only add an event once
+# one of these shows a confirmed 2026-27 date. Known gaps as of 2026-10-16:
+#   Holiday Tree Lighting + Small Business Saturday 2026 dates not posted yet (2025 pages only).
+WATCH = [
+    "https://www.warehouseboise.com/  (+ /entertainment, FB/IG) - Warehouse one-offs",
+    "https://downtownboise.org/events/events-calendar - DBA calendar",
+    "https://downtownboise.org/events/downtown-holiday-tree-lighting",
+    "https://downtownboise.org/events/shop-small",
+    "https://www.visitboise.com/events/ - Visit Boise calendar (use month filter)",
+    "https://boisedev.com , https://www.idahopress.com/boiseweekly - local news",
+    "Organizer pages + web search for Boise Centre conventions",
+    "Employee tips (e.g. Facebook groups): confirm on an official page before adding",
+]
+
 ICA = "Idaho Central Arena (next door)"
 EMA = "ExtraMile Arena (campus)"
 ALB = "Albertsons Stadium (campus)"
@@ -131,6 +145,29 @@ while d <= dt.date(2026, 12, 19):          # 2026 season ends Dec 19
         venue="Grove Plaza / 8th St (outside the door)", impact="med", src="market",
         note="Saturday market, 9:30 AM – 1:30 PM")
     d += dt.timedelta(days=7)
+
+# --- De-duplicate: same day-range overlap + similar title (or one title inside the other) ---
+import re, difflib
+def _norm(t):
+    t = t.lower()
+    t = re.sub(r"\(.*?\)", " ", t)                      # drop parentheticals
+    t = re.sub(r"\b(the|at|vs|annual|2026|2027|live|conference|convention)\b", " ", t)
+    return re.sub(r"[^a-z0-9]+", " ", t).strip()
+def _dup(a, b):
+    if a["start"] > b["end"] or b["start"] > a["end"]:
+        return False
+    x, y = _norm(a["title"]), _norm(b["title"])
+    if not x or not y:
+        return False
+    return x in y or y in x or difflib.SequenceMatcher(None, x, y).ratio() >= 0.8
+kept = []
+for e in events:
+    twin = next((k for k in kept if _dup(k, e)), None)
+    if twin:
+        print(f"DUPLICATE dropped: {e['title']} ({e['start']}) ~ {twin['title']}")
+    else:
+        kept.append(e)
+events[:] = kept
 
 # sanity: every date parses, end >= start
 for e in events:
