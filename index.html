@@ -61,6 +61,7 @@ main{padding:18px 16px 40px;max-width:1000px;margin:0 auto}
 .card .ti{font-size:1.35rem;font-weight:700;line-height:1.25}
 .card .ve{color:var(--dim);margin-top:4px}
 .card .tip{margin-top:8px;color:#ffd9b8;font-size:1rem}
+.card .staff{margin-top:6px;color:#fff;font-weight:700;font-size:1rem}
 .card.past{opacity:.45}
 .card.past .tm::after{content:"Done";display:block;font-size:.75rem;color:var(--dim);margin-top:2px}
 .empty{background:var(--panel);border:1px dashed var(--line);border-radius:16px;padding:28px;text-align:center;color:var(--dim);font-size:1.2rem;margin-top:16px}
@@ -205,6 +206,7 @@ body.is-offline .offline{display:block}
       <div><div class="ti">${esc(e.title)}</div>
         <div class="ve">${esc(shortVenue(e.venue))}${esc(daysSpan(e))}</div>
         <div class="tip">${esc(tip(e))}</div>
+        ${e.staff ? `<div class="staff">${esc(e.staff)}</div>` : ""}
         ${e.note ? `<div class="ve">${esc(e.note)}</div>` : ""}</div>
     </article>`;
   }

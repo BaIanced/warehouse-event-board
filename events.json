@@ -48,7 +48,8 @@
    "time": "5:00 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   "src": "https://broncosports.com/sports/mens-basketball/schedule",
+   "staff": "Staff 4 in the 90 min before tip-off (only 1 game of history)"
   },
   {
    "cat": "weekly",
@@ -59,7 +60,8 @@
    "venue": "Grove Plaza / 8th St (outside the door)",
    "impact": "med",
    "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
-   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM",
+   "staff": "Normal staffing for the day (lunch 2, dinner 3) - no measurable lift"
   },
   {
    "cat": "hockey",
@@ -79,7 +81,8 @@
    "time": "All day",
    "venue": "Boise Centre (across the street)",
    "impact": "med",
-   "src": "https://lidarnews.com/event/r-con-boise-2026/"
+   "src": "https://lidarnews.com/event/r-con-boise-2026/",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "downtown",
@@ -111,7 +114,8 @@
    "time": "7:00 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   "src": "https://broncosports.com/sports/mens-basketball/schedule",
+   "staff": "Staff 4 in the 90 min before tip-off (only 1 game of history)"
   },
   {
    "cat": "weekly",
@@ -122,7 +126,8 @@
    "venue": "Grove Plaza / 8th St (outside the door)",
    "impact": "med",
    "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
-   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM",
+   "staff": "Normal staffing for the day (lunch 2, dinner 3) - no measurable lift"
   },
   {
    "cat": "downtown",
@@ -143,7 +148,8 @@
    "time": "All day",
    "venue": "Boise Centre + Egyptian Theatre",
    "impact": "med",
-   "src": "https://artsnw.org/conference_overview"
+   "src": "https://artsnw.org/conference_overview",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "hockey",
@@ -153,7 +159,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "hockey",
@@ -163,7 +170,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "weekly",
@@ -174,7 +182,8 @@
    "venue": "Grove Plaza / 8th St (outside the door)",
    "impact": "med",
    "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
-   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM",
+   "staff": "Normal staffing for the day (lunch 2, dinner 3) - no measurable lift"
   },
   {
    "cat": "convention",
@@ -185,7 +194,8 @@
    "venue": "Boise Centre (across the street)",
    "impact": "med",
    "src": "https://www.sharedaudiences.com/events/idaho-mining-conference-2026",
-   "note": "Dates match the Warehouse newsletter (9/28); listing site is not the organizer"
+   "note": "Dates match the Warehouse newsletter (9/28); listing site is not the organizer",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "mbb",
@@ -195,7 +205,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   "src": "https://broncosports.com/sports/mens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "football",
@@ -205,7 +216,8 @@
    "time": "8:00 PM",
    "venue": "Albertsons Stadium (campus)",
    "impact": "high",
-   "src": "https://broncosports.com/news/2026/5/27/football-boise-state-pac-12-announce-2026-conference-tv-selections-and-kickoff-times"
+   "src": "https://broncosports.com/news/2026/5/27/football-boise-state-pac-12-announce-2026-conference-tv-selections-and-kickoff-times",
+   "staff": "Staff 6 at dinner (peaks ~6 PM and ~8 PM), lunch 3 (provisional - little history)"
   },
   {
    "cat": "weekly",
@@ -216,7 +228,8 @@
    "venue": "Grove Plaza / 8th St (outside the door)",
    "impact": "med",
    "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
-   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM",
+   "staff": "Normal staffing for the day (lunch 2, dinner 3) - no measurable lift"
   },
   {
    "cat": "wbb",
@@ -226,7 +239,8 @@
    "time": "11:00 AM",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   "src": "https://broncosports.com/sports/womens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "hockey",
@@ -236,7 +250,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 3 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "convention",
@@ -246,7 +261,8 @@
    "time": "All day",
    "venue": "Boise Centre (across the street)",
    "impact": "med",
-   "src": "https://www.idsba.org/convention/"
+   "src": "https://www.idsba.org/convention/",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "mbb",
@@ -256,7 +272,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   "src": "https://broncosports.com/sports/mens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "downtown",
@@ -267,7 +284,8 @@
    "venue": "Downtown Boise / Warehouse",
    "impact": "med",
    "src": "https://www.downtownboise.org/events/first-thursday",
-   "note": "Warehouse live music 5-8 PM: Spencer Batt"
+   "note": "Warehouse live music 5-8 PM: Spencer Batt",
+   "staff": "Staff 3 at dinner (lift is small; judgment call)"
   },
   {
    "cat": "wbb",
@@ -277,7 +295,8 @@
    "time": "6:30 PM",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   "src": "https://broncosports.com/sports/womens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 4) - no measurable lift"
   },
   {
    "cat": "hockey",
@@ -287,7 +306,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "hockey",
@@ -297,7 +317,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "weekly",
@@ -308,7 +329,8 @@
    "venue": "Grove Plaza / 8th St (outside the door)",
    "impact": "med",
    "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
-   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM",
+   "staff": "Normal staffing for the day (lunch 2, dinner 3) - no measurable lift"
   },
   {
    "cat": "mbb",
@@ -318,7 +340,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   "src": "https://broncosports.com/sports/mens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "wbb",
@@ -328,7 +351,8 @@
    "time": "6:30 PM",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   "src": "https://broncosports.com/sports/womens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "mbb",
@@ -338,7 +362,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   "src": "https://broncosports.com/sports/mens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "music",
@@ -349,7 +374,8 @@
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
    "src": "https://idahocentralarena.com/events/",
-   "note": "Doors 6:30 PM"
+   "note": "Doors 6:30 PM",
+   "staff": "Staff 3-4 in the 90 min before the show (only 1 show of history)"
   },
   {
    "cat": "wbb",
@@ -359,7 +385,8 @@
    "time": "6:30 PM",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   "src": "https://broncosports.com/sports/womens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 4) - no measurable lift"
   },
   {
    "cat": "football",
@@ -369,7 +396,8 @@
    "time": "4:00 PM",
    "venue": "Albertsons Stadium (campus)",
    "impact": "high",
-   "src": "https://broncosports.com/news/2026/5/27/football-boise-state-pac-12-announce-2026-conference-tv-selections-and-kickoff-times"
+   "src": "https://broncosports.com/news/2026/5/27/football-boise-state-pac-12-announce-2026-conference-tv-selections-and-kickoff-times",
+   "staff": "Staff 6 at dinner (peaks ~6 PM and ~8 PM), lunch 3 (provisional - little history)"
   },
   {
    "cat": "weekly",
@@ -380,7 +408,8 @@
    "venue": "Grove Plaza / 8th St (outside the door)",
    "impact": "med",
    "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
-   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM",
+   "staff": "Normal staffing for the day (lunch 2, dinner 3) - no measurable lift"
   },
   {
    "cat": "wbb",
@@ -390,7 +419,8 @@
    "time": "1:00 PM",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   "src": "https://broncosports.com/sports/womens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "hockey",
@@ -400,7 +430,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 3 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "hockey",
@@ -410,7 +441,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "mbb",
@@ -420,7 +452,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   "src": "https://broncosports.com/sports/mens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 4) - no measurable lift"
   },
   {
    "cat": "downtown",
@@ -441,7 +474,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "football",
@@ -451,7 +485,8 @@
    "time": "7:30 PM",
    "venue": "Albertsons Stadium (campus)",
    "impact": "high",
-   "src": "https://broncosports.com/news/2026/5/27/football-boise-state-pac-12-announce-2026-conference-tv-selections-and-kickoff-times"
+   "src": "https://broncosports.com/news/2026/5/27/football-boise-state-pac-12-announce-2026-conference-tv-selections-and-kickoff-times",
+   "staff": "Staff 6 at dinner (peaks ~6 PM and ~8 PM), lunch 3 (provisional - little history)"
   },
   {
    "cat": "weekly",
@@ -462,7 +497,8 @@
    "venue": "Grove Plaza / 8th St (outside the door)",
    "impact": "med",
    "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
-   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM",
+   "staff": "Normal staffing for the day (lunch 2, dinner 3) - no measurable lift"
   },
   {
    "cat": "wbb",
@@ -472,7 +508,8 @@
    "time": "2:00 PM",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   "src": "https://broncosports.com/sports/womens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "convention",
@@ -483,7 +520,8 @@
    "venue": "Boise Centre (across the street)",
    "impact": "med",
    "src": "https://www.saintalphonsus.org/foundation/events/festival-of-trees/admission-and-attractions",
-   "note": "Gala Tue 11/24; public hours Wed 10-8, Thu (Thanksgiving) 2-6, Fri 10-9, Sat 10-8, Sun 10-5; fashion show Mon 11/30"
+   "note": "Gala Tue 11/24; public hours Wed 10-8, Thu (Thanksgiving) 2-6, Fri 10-9, Sat 10-8, Sun 10-5; fashion show Mon 11/30",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "mbb",
@@ -493,7 +531,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   "src": "https://broncosports.com/sports/mens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "weekly",
@@ -504,7 +543,8 @@
    "venue": "Grove Plaza / 8th St (outside the door)",
    "impact": "med",
    "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
-   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM",
+   "staff": "Normal staffing for the day (lunch 2, dinner 3) - no measurable lift"
   },
   {
    "cat": "hockey",
@@ -514,7 +554,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 3 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "downtown",
@@ -525,7 +566,8 @@
    "venue": "Downtown Boise / Warehouse",
    "impact": "med",
    "src": "https://www.downtownboise.org/events/first-thursday",
-   "note": "Warehouse live music 5-8 PM: Jake Ransom"
+   "note": "Warehouse live music 5-8 PM: Jake Ransom",
+   "staff": "Staff 3 at dinner (lift is small; judgment call)"
   },
   {
    "cat": "hockey",
@@ -535,7 +577,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "downtown",
@@ -556,7 +599,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "weekly",
@@ -567,7 +611,8 @@
    "venue": "Grove Plaza / 8th St (outside the door)",
    "impact": "med",
    "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
-   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM",
+   "staff": "Normal staffing for the day (lunch 2, dinner 3) - no measurable lift"
   },
   {
    "cat": "hockey",
@@ -577,7 +622,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 3 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "wbb",
@@ -587,7 +633,8 @@
    "time": "6:30 PM",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   "src": "https://broncosports.com/sports/womens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 4) - no measurable lift"
   },
   {
    "cat": "hockey",
@@ -597,7 +644,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "hockey",
@@ -607,7 +655,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "weekly",
@@ -618,7 +667,8 @@
    "venue": "Grove Plaza / 8th St (outside the door)",
    "impact": "med",
    "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
-   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM",
+   "staff": "Normal staffing for the day (lunch 2, dinner 3) - no measurable lift"
   },
   {
    "cat": "mbb",
@@ -628,7 +678,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   "src": "https://broncosports.com/sports/mens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 3) - no measurable lift"
   },
   {
    "cat": "wbb",
@@ -638,7 +689,8 @@
    "time": "2:00 PM",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   "src": "https://broncosports.com/sports/womens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "mbb",
@@ -648,7 +700,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   "src": "https://broncosports.com/sports/mens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "weekly",
@@ -659,7 +712,8 @@
    "venue": "Grove Plaza / 8th St (outside the door)",
    "impact": "med",
    "src": "https://www.idahonews.com/news/idaho-photo-galleries/capital-city-public-market-opens-2026-season",
-   "note": "Saturday market, 9:30 AM \u2013 1:30 PM"
+   "note": "Saturday market, 9:30 AM \u2013 1:30 PM",
+   "staff": "Normal staffing for the day (lunch 2, dinner 3) - no measurable lift"
   },
   {
    "cat": "wbb",
@@ -669,7 +723,8 @@
    "time": "2:00 PM",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   "src": "https://broncosports.com/sports/womens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "wbb",
@@ -679,7 +734,8 @@
    "time": "2:00 PM",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   "src": "https://broncosports.com/sports/womens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "mbb",
@@ -689,7 +745,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   "src": "https://broncosports.com/sports/mens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "hockey",
@@ -699,7 +756,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 3 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "wbb",
@@ -709,7 +767,8 @@
    "time": "2:00 PM",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   "src": "https://broncosports.com/sports/womens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "hockey",
@@ -719,7 +778,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "hockey",
@@ -729,7 +789,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "downtown",
@@ -739,7 +800,8 @@
    "time": "5:00 PM",
    "venue": "Downtown Boise / Warehouse",
    "impact": "med",
-   "src": "https://www.downtownboise.org/events/first-thursday"
+   "src": "https://www.downtownboise.org/events/first-thursday",
+   "staff": "Staff 3 at dinner (lift is small; judgment call)"
   },
   {
    "cat": "mbb",
@@ -749,7 +811,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   "src": "https://broncosports.com/sports/mens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 3) - no measurable lift"
   },
   {
    "cat": "mbb",
@@ -759,7 +822,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   "src": "https://broncosports.com/sports/mens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "wbb",
@@ -769,7 +833,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   "src": "https://broncosports.com/sports/womens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "wbb",
@@ -779,7 +844,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   "src": "https://broncosports.com/sports/womens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 3) - no measurable lift"
   },
   {
    "cat": "hockey",
@@ -789,7 +855,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 3 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "hockey",
@@ -799,7 +866,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "hockey",
@@ -809,7 +877,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "mbb",
@@ -819,7 +888,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   "src": "https://broncosports.com/sports/mens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 3) - no measurable lift"
   },
   {
    "cat": "wbb",
@@ -829,7 +899,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   "src": "https://broncosports.com/sports/womens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "hockey",
@@ -850,7 +921,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   "src": "https://broncosports.com/sports/mens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "hockey",
@@ -860,7 +932,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 3 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "downtown",
@@ -870,7 +943,8 @@
    "time": "5:00 PM",
    "venue": "Downtown Boise / Warehouse",
    "impact": "med",
-   "src": "https://www.downtownboise.org/events/first-thursday"
+   "src": "https://www.downtownboise.org/events/first-thursday",
+   "staff": "Staff 3 at dinner (lift is small; judgment call)"
   },
   {
    "cat": "hockey",
@@ -880,7 +954,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "hockey",
@@ -890,7 +965,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "wbb",
@@ -900,7 +976,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   "src": "https://broncosports.com/sports/womens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 3) - no measurable lift"
   },
   {
    "cat": "mbb",
@@ -910,7 +987,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   "src": "https://broncosports.com/sports/mens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "wbb",
@@ -920,7 +998,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   "src": "https://broncosports.com/sports/womens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "mbb",
@@ -930,7 +1009,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   "src": "https://broncosports.com/sports/mens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 3) - no measurable lift"
   },
   {
    "cat": "wbb",
@@ -940,7 +1020,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   "src": "https://broncosports.com/sports/womens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "mbb",
@@ -950,7 +1031,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   "src": "https://broncosports.com/sports/mens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 3) - no measurable lift"
   },
   {
    "cat": "wbb",
@@ -960,7 +1042,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   "src": "https://broncosports.com/sports/womens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "hockey",
@@ -970,7 +1053,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "hockey",
@@ -980,7 +1064,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "mbb",
@@ -990,7 +1075,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   "src": "https://broncosports.com/sports/mens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 2) - no measurable lift"
   },
   {
    "cat": "downtown",
@@ -1000,7 +1086,8 @@
    "time": "5:00 PM",
    "venue": "Downtown Boise / Warehouse",
    "impact": "med",
-   "src": "https://www.downtownboise.org/events/first-thursday"
+   "src": "https://www.downtownboise.org/events/first-thursday",
+   "staff": "Staff 3 at dinner (lift is small; judgment call)"
   },
   {
    "cat": "festival",
@@ -1011,7 +1098,8 @@
    "venue": "Idaho Central Arena (next door)",
    "impact": "max",
    "src": "https://www.idahonews.com/news/local/big-sky-basketball-tournaments-to-stay-in-boise-through-2031",
-   "note": "Men's + women's tournament; visiting fan groups often meet at the Warehouse"
+   "note": "Men's + women's tournament; visiting fan groups often meet at the Warehouse",
+   "staff": "Staff 4 at dinner (5 on Saturday); lunch 2-3 - lunch is busy too"
   },
   {
    "cat": "wbb",
@@ -1021,7 +1109,8 @@
    "time": "TBA",
    "venue": "ExtraMile Arena (campus)",
    "impact": "low",
-   "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   "src": "https://broncosports.com/sports/womens-basketball/schedule",
+   "staff": "Normal staffing for the day (lunch 2, dinner 3) - no measurable lift"
   },
   {
    "cat": "hockey",
@@ -1031,7 +1120,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "hockey",
@@ -1041,7 +1131,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "hockey",
@@ -1051,7 +1142,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 3 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "hockey",
@@ -1061,7 +1153,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "hockey",
@@ -1071,7 +1164,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "hockey",
@@ -1081,7 +1175,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 3 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "festival",
@@ -1092,7 +1187,8 @@
    "venue": "Downtown Boise",
    "impact": "max",
    "src": "https://treefortmusicfest.com/treefort-music-fest-2027-the-countdown-begins/",
-   "note": "5-day downtown festival; overlaps Steelheads Mar 31, Apr 2, Apr 3"
+   "note": "5-day downtown festival; overlaps Steelheads Mar 31, Apr 2, Apr 3",
+   "staff": "Staff 3 at dinner, lunch 2 (provisional - little history)"
   },
   {
    "cat": "downtown",
@@ -1102,7 +1198,8 @@
    "time": "5:00 PM",
    "venue": "Downtown Boise / Warehouse",
    "impact": "med",
-   "src": "https://www.downtownboise.org/events/first-thursday"
+   "src": "https://www.downtownboise.org/events/first-thursday",
+   "staff": "Staff 3 at dinner (lift is small; judgment call)"
   },
   {
    "cat": "hockey",
@@ -1112,7 +1209,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "hockey",
@@ -1122,7 +1220,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "hockey",
@@ -1132,7 +1231,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 3 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "hockey",
@@ -1142,7 +1242,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   },
   {
    "cat": "hockey",
@@ -1152,7 +1253,8 @@
    "time": "7:10 PM",
    "venue": "Idaho Central Arena (next door)",
    "impact": "high",
-   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf"
+   "src": "https://echl.s3.us-east-2.amazonaws.com/production/idh/uploads/files/2026-27%20Schedules/2026-27%20Idaho%20Steelheads%20Home%20Schedule.pdf",
+   "staff": "Staff 5 on the clock 5:00-7:30 PM (lunch 2)"
   }
  ]
 }

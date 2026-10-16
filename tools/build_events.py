@@ -175,6 +175,37 @@ for e in events:
         kept.append(e)
 events[:] = kept
 
+
+# --- Staffing guidance from the Oct 2025-Oct 2026 Square sales report (see event-staffing-report) ---
+# Headcount = people on the clock at the dinner/rush peak. Lunch stays at 2 for nearly every event type.
+# Types without a measurable lift get the normal-day number so nobody over-schedules.
+def _normal(d):
+    wd = d.weekday()                                   # Mon=0 ... Sun=6
+    return 4 if wd == 4 else 3 if wd == 5 else 2
+def staff_for(e):
+    d = dt.date.fromisoformat(e["start"]); cat = e["cat"]; t = e["title"]; ven = e["venue"]
+    wd = d.weekday(); wkend = wd in (4, 5)
+    if cat == "hockey" and e.get("time") == "7:10 PM":
+        return f"Staff {5 if wkend else 3} on the clock 5:00-7:30 PM (lunch 2)"
+    if cat == "festival" and t.startswith("Big Sky"):
+        return "Staff 4 at dinner (5 on Saturday); lunch 2-3 - lunch is busy too"
+    if cat == "festival" and t.startswith("Treefort"):
+        return "Staff 3 at dinner, lunch 2 (provisional - little history)"
+    if cat == "football":
+        return "Staff 6 at dinner (peaks ~6 PM and ~8 PM), lunch 3 (provisional - little history)"
+    if cat == "music":
+        return "Staff 3-4 in the 90 min before the show (only 1 show of history)"
+    if cat == "mbb" and "Idaho Central" in ven or (cat == "mbb" and "next door" in ven):
+        return "Staff 4 in the 90 min before tip-off (only 1 game of history)"
+    if cat == "downtown" and t.startswith("First Thursday"):
+        return "Staff 3 at dinner (lift is small; judgment call)"
+    if cat in ("convention", "mbb", "wbb", "weekly"):
+        return f"Normal staffing for the day (lunch 2, dinner {_normal(d)}) - no measurable lift"
+    return None
+for e in events:
+    st = staff_for(e)
+    if st: e["staff"] = st
+
 # sanity: every date parses, end >= start
 for e in events:
     s = dt.date.fromisoformat(e["start"]); en = dt.date.fromisoformat(e["end"])
