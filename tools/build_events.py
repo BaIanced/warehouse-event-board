@@ -26,6 +26,8 @@ SRC = {
 # Extra sources to re-check every week (not tied to a row yet). Only add an event once
 # one of these shows a confirmed 2026-27 date. Known gaps as of 2026-10-16:
 #   Holiday Tree Lighting + Small Business Saturday 2026 dates not posted yet (2025 pages only).
+#   OWNER SAYS Downtown Holiday Tree Lighting (Grove Plaza, 2025 was Fri Nov 28 5-6 PM) IS HUGE:
+#   add as cat "festival", impact "max" the moment a 2026 date is confirmed. Never guess the date.
 WATCH = [
     "https://www.warehouseboise.com/  (+ /entertainment, FB/IG) - Warehouse one-offs",
     "https://downtownboise.org/events/events-calendar - DBA calendar",
