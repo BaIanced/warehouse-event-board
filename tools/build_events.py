@@ -317,6 +317,94 @@ while day <= TODAY + dt.timedelta(days=180):
         plan[di] = p
     day += dt.timedelta(days=1)
 
+# --- Shift needs (Phase 1): the plan turned into shift blocks with rush windows ---------------------
+# PUBLIC and name-free on purpose: only times and headcounts. A private tool may read this key
+# from the live events.json URL and decide WHO works; nothing about people ever goes in this repo.
+# Every value below was confirmed by the owner on 2026-11-17 (listed on the Schedule tab; edit here).
+DOWK = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
+HOURS = {"mon": ("11:00", "21:00"), "tue": ("11:00", "21:00"), "wed": ("11:00", "21:00"),
+         "thu": ("11:00", "21:00"), "fri": ("11:00", "22:00"), "sat": ("11:00", "22:00"),
+         "sun": ("11:00", "20:00")}                                    # CONFIRMED 2026-11-17
+LUNCH_SHIFT = ("10:30", "15:00")                                       # CONFIRMED
+DINNER_START = "15:30"                                                 # CONFIRMED
+CLOSE_PAD = 30                                                         # CONFIRMED: closing really takes 30 min past the posted close
+LUNCH_RUSH = (11 * 60, 14 * 60)                                        # CONFIRMED default lunch rush
+DINNER_RUSH = (17 * 60, 20 * 60)                                       # CONFIRMED default dinner rush (all-day / unknown-time events)
+# (minutes before start, minutes after start) of the extra-people window, per event type. CONFIRMED;
+# hockey follows the sales report's "5:00-7:30 PM for a 7:10 PM puck drop".
+RUSH_AROUND = {"hockey": (130, 20), "football": (120, 120), "mbb": (90, 20), "wbb": (90, 20),
+               "music": (90, 20), "downtown": (0, 180)}
+def _hm(m): return f"{m // 60:02d}:{m % 60:02d}"
+def _tm(t):                                                            # "7:10 PM" -> minutes, None if not a clock time
+    m = re.match(r"^(\d{1,2}):(\d{2}) ?(AM|PM)$", (t or "").strip(), re.I)
+    return None if not m else ((int(m[1]) % 12) + (12 if m[3].upper() == "PM" else 0)) * 60 + int(m[2])
+def _clk(h): return int(h[:2]) * 60 + int(h[3:])
+def _shifts(day):
+    cl = _clk(HOURS[DOWK[day.weekday()]][1])
+    return {"lunch": (_clk(LUNCH_SHIFT[0]), _clk(LUNCH_SHIFT[1])),
+            "dinner": (_clk(DINNER_START), cl + CLOSE_PAD)}
+def _window(e, shift, default):
+    lo, hi = shift
+    t = _tm(e.get("time"))
+    if t is None or e["cat"] not in RUSH_AROUND:
+        w = default
+    else:
+        a, b = RUSH_AROUND[e["cat"]]
+        beg = t - a
+        d = _tm(e.get("doors"))
+        if d is not None: beg = min(beg, d - 30)
+        w = (beg, t + b)
+    w = (max(w[0], lo), min(w[1], hi))
+    return w if w[1] - w[0] >= 60 else (max(default[0], lo), min(default[1], hi))   # too short after clamping -> default
+def _blocks(day, lunch, dinner, todays):
+    sh, base_d, out = _shifts(day), _normal(day), []
+    for name, base, peak, default in (("lunch", 2, lunch, LUNCH_RUSH), ("dinner", base_d, dinner, DINNER_RUSH)):
+        lo, hi = sh[name]
+        out.append({"shift": name, "start": _hm(lo), "end": _hm(hi), "n": base, "kind": "base"})
+        if peak > base:
+            wins = [_window(e, sh[name], default) for e in todays
+                    if (staff_for(e, day)[1 if name == "lunch" else 2] or 0) == peak] or [default]
+            out.append({"shift": name, "start": _hm(min(w[0] for w in wins)), "end": _hm(max(w[1] for w in wins)),
+                        "n": peak - base, "kind": "rush"})
+    return out
+def _hours(blocks): return round(sum(b["n"] * (_clk(b["end"]) - _clk(b["start"])) for b in blocks) / 60, 2)
+needs_normal = {}
+for i, k in enumerate(DOWK):
+    bl = _blocks(TODAY + dt.timedelta(days=(i - TODAY.weekday()) % 7), 2, _normal(TODAY + dt.timedelta(days=(i - TODAY.weekday()) % 7)), [])
+    needs_normal[k] = {"blocks": bl, "hours": _hours(bl)}
+needs_days = {}
+for di, p in plan.items():
+    day = dt.date.fromisoformat(di)
+    todays = [e for e in events if e["start"] <= di <= e["end"] and e["cat"] != "shows"]
+    bl = _blocks(day, p["lunch"], p["dinner"], todays)
+    n = {"blocks": bl, "hours": _hours(bl)}
+    for k in ("why", "stack", "nohist"):
+        if k in p: n[k] = p[k]
+    needs_days[di] = n
+needs = {
+    "about": "Shift blocks per day. n = people on the clock. kind 'base' = whole shift, 'rush' = EXTRA people on top of the base during start-end. "
+             "Times are 24h Boise time. A date missing from 'days' has no tracked event: use 'normal' for that weekday. "
+             "Headcounts are interchangeable (no skill slots). No names or personal data - those live only in a private project.",
+    "assumptions": {
+        "confirmed": [
+            "Store hours (owner, 2026-11-17): Mon-Thu 11:00-21:00, Fri-Sat 11:00-22:00, Sun 11:00-20:00",
+            "The schedule is written on Wednesday for the following Monday-Sunday week",
+            f"Lunch shift {LUNCH_SHIFT[0]}-{LUNCH_SHIFT[1]}",
+            f"Dinner shift {DINNER_START} to {CLOSE_PAD} min after close. Closing work really takes this long, so schedule to it, not to the posted close",
+            "Lunch and dinner are separate shifts (nobody works straight through)",
+            "Headcount is interchangeable: no oven / counter / closer skill slots",
+            "Base headcount is the same all shift; only event rush windows add people",
+            "Rush windows come from event start and door times (default lunch 11:00-14:00, dinner 17:00-20:00)",
+        ],
+        "assumed": [],
+        "confirmed_on": "2026-11-17"},
+    "hours": {k: list(v) for k, v in HOURS.items()},
+    "schedule_day": "wed",
+    "through": (TODAY + dt.timedelta(days=180)).isoformat(),   # dates after this are not planned yet
+    "normal": needs_normal,
+    "days": needs_days,
+}
+
 # --- Calendar context: things that shift normal traffic but aren't events ----------------------
 def nth(year, month, weekday, n):                      # n-th weekday of a month (n=-1 -> last)
     if n > 0:
@@ -371,6 +459,7 @@ out = {
     "context": context,
     "context_src": SRC["bsucal"],
     "plan": plan,
+    "needs": needs,
     "categories": {
         "hockey":   {"label": "Hockey",            "color": "#4FA3FF"},
         "football": {"label": "Football",          "color": "#FF7A1A"},

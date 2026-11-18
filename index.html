@@ -124,8 +124,56 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
 .legend{color:var(--dim);font-size:.8rem;margin-top:24px;line-height:1.6}
 .offline{display:none;background:#5a1d26;color:#ffd0d5;text-align:center;font-size:.85rem;padding:4px}
 body.is-offline .offline{display:block}
+/* SCHEDULE (shift needs) */
+.sched .whead{margin-bottom:8px}
+.sbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 12px}
+.sbar .grow{flex:1}
+.sbtn{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 16px;min-height:44px;font-size:.95rem}
+.sbtn.pri{background:var(--accent);border-color:var(--accent);color:#111;font-weight:700}
+.sflag{background:#5a3e0e;border:1px solid #8a6212;color:#ffe0a3;border-radius:12px;padding:10px 14px;margin:0 0 12px;font-weight:700}
+.sok{background:var(--l1);border:1px solid #476a2d;color:var(--l1t);border-radius:12px;padding:10px 14px;margin:0 0 12px}
+table.sg{width:100%;border-collapse:separate;border-spacing:0 6px;font-size:.95rem}
+table.sg th{color:var(--dim);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;text-align:left;padding:0 10px}
+table.sg td{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px;vertical-align:top}
+table.sg td:first-child{border-left:1px solid var(--line);border-radius:12px 0 0 12px}
+table.sg td:last-child{border-right:1px solid var(--line);border-radius:0 12px 12px 0}
+table.sg tr.chg td{border-color:#8a6212;background:#2a2412}
+table.sg .dn b{font-size:1.1rem;display:block}
+table.sg .dn span{color:var(--dim);font-size:.85rem}
+table.sg .ev{color:#ffd9b8;font-size:.82rem;margin-top:4px;line-height:1.3}
+table.sg .ev i{font-style:normal;color:var(--dim)}
+.blk{line-height:1.35;white-space:nowrap}
+.blk b{font-size:1.15rem}
+.blk.rush{color:#ffc35c}
+.blk em{font-style:normal;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--dim)}
+.hrs{font-weight:800;font-size:1.1rem}
+.hrs small{display:block;font-size:.78rem;font-weight:600}
+.up{color:#ffc35c}.dnn{color:var(--l1t)}.eq{color:var(--dim)}
+.chgtag{display:inline-block;margin-top:4px;background:#8a6212;color:#fff;border-radius:8px;padding:2px 8px;font-size:.72rem;font-weight:800;text-transform:uppercase}
+.stot{display:flex;gap:18px;flex-wrap:wrap;align-items:baseline;background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-top:6px}
+.stot b{font-size:1.5rem}
+.assume{margin-top:18px;border:1px dashed var(--line);border-radius:12px;padding:12px 16px;color:var(--dim);font-size:.85rem;line-height:1.5}
+.assume h3{margin:0 0 4px;font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text)}
+.assume ul{margin:2px 0 10px;padding-left:20px}
+.assume .a li::marker{color:#ffc35c}
+.badge{display:inline-block;min-width:1.3em;margin-left:6px;border-radius:999px;background:#8a6212;color:#fff;font-size:.75rem;font-weight:800;padding:0 6px}
+.badge[hidden]{display:none}
+.printonly{display:none}
+@media print{
+  :root{--bg:#fff;--panel:#fff;--panel2:#fff;--line:#999;--text:#000;--dim:#444}
+  html,body{background:#fff;color:#000}
+  header,.offline,.stale,.noprint,.legend{display:none !important}
+  main{max-width:none;padding:0}
+  .printonly{display:block;font-size:1.1rem;font-weight:700;margin-bottom:8px}
+  table.sg td{background:#fff !important;border-color:#999 !important}
+  table.sg tr{break-inside:avoid}
+  .blk.rush,.ev,.up{color:#000 !important}
+  .stot,.assume{border:1px solid #999;color:#000}
+  .sflag,.sok{display:none}
+}
 @media (max-width:640px){
   :root{font-size:16px}
+  table.sg{font-size:.85rem}table.sg td{padding:8px 6px}.blk{white-space:normal}
   .hero .big{font-size:2.4rem}.hero .sum{margin-left:0;text-align:left}
   .card{grid-template-columns:1fr;gap:6px}
   .row{grid-template-columns:1fr auto;gap:8px}
@@ -143,6 +191,7 @@ body.is-offline .offline{display:block}
       <button class="tab" role="tab" data-view="today">Today</button>
       <button class="tab" role="tab" data-view="week">This Week</button>
       <button class="tab" role="tab" data-view="month">Month</button>
+      <button class="tab" role="tab" data-view="schedule">Schedule<span class="badge" id="sbadge" hidden></span></button>
     </div>
     <button class="fbtn" id="fbtn" aria-expanded="false">Filters</button>
   </div>
@@ -163,7 +212,8 @@ body.is-offline .offline{display:block}
   let view = store.get("view2", "today");
   let off = store.get("hidden", {});
   let offImp = store.get("hiddenImp", {});
-  let weekOffset = 0, monthOffset = 0, filtersOpen = false;
+  let weekOffset = 0, monthOffset = 0, schedOffset = 1, filtersOpen = false;
+  let marks = store.get("sched", {});   // weeks the owner marked as scheduled: stays on this device only
 
   const $ = s => document.querySelector(s);
   const pad = n => String(n).padStart(2,"0");
@@ -308,6 +358,83 @@ body.is-offline .offline{display:block}
     $("#main").innerHTML = h + `</div>` + legend("Color = how busy. Tap a day for details.");
   }
 
+  // ---- SCHEDULE: shift needs per day, labor-hours vs a normal week, print, "changed since scheduled" ----
+  const DK = ["sun","mon","tue","wed","thu","fri","sat"];
+  const mondayOf = d => addDays(d, -((d.getDay()+6)%7));
+  const m24 = t => +t.slice(0,2)*60 + +t.slice(3);
+  const t12 = t => clock(m24(t)).replace(":00 ", " ");
+  const rng = b => `${t12(b.start)}–${t12(b.end)}`;
+  const hrs = bl => bl.reduce((a,b) => a + b.n*(m24(b.end)-m24(b.start))/60, 0);
+  const fmtH = h => String(Math.round(h*10)/10);
+  const signed = h => (h > 0.05 ? "+" : h < -0.05 ? "−" : "") + fmtH(Math.abs(h));
+  function needsFor(di){
+    const N = data.needs; if(!N) return null;
+    return N.days[di] || N.normal[DK[parse(di).getDay()]];
+  }
+  const normalFor = di => data.needs.normal[DK[parse(di).getDay()]];
+  // Events that move staffing (club shows and weekly regulars add no people)
+  const staffEvents = di => data.events.filter(e => e.start <= di && e.end >= di && e.cat !== "shows" && e.cat !== "weekly")
+    .sort((a,b) => (mins(a.time) ?? -1) - (mins(b.time) ?? -1));
+  function hash(s){ let h = 5381; for(let i=0;i<s.length;i++) h = ((h*33) ^ s.charCodeAt(i)) >>> 0; return h.toString(36); }
+  const daySig = di => hash(JSON.stringify([(needsFor(di) || {}).blocks, staffEvents(di).map(e => [e.title, e.time, e.check ? 1 : 0])]));
+  const weekDays = mon => Array.from({length:7}, (_, i) => iso(addDays(mon, i)));
+  function changedDays(monIso){
+    const m = marks[monIso]; if(!m || !data || !data.needs) return [];
+    return Object.keys(m.days).filter(di => m.days[di] !== daySig(di));
+  }
+  function schedBadge(){
+    const t = iso(today());
+    const n = Object.keys(marks).filter(k => iso(addDays(parse(k), 6)) >= t && changedDays(k).length).length;
+    const el = $("#sbadge"); if(!el) return;
+    el.hidden = !n; el.textContent = n || "";
+  }
+  function blocksHtml(bl, shift){
+    return bl.filter(b => b.shift === shift).map(b => b.kind === "base"
+      ? `<div class="blk"><b>${b.n}</b> ${b.n === 1 ? "person" : "people"} · ${rng(b)}</div>`
+      : `<div class="blk rush"><b>+${b.n}</b> · ${rng(b)} <em>rush</em></div>`).join("");
+  }
+  function renderSchedule(){
+    if(!data.needs){ $("#main").innerHTML = `<div class="empty">Shift needs aren't in the schedule data yet. They appear after the next daily refresh.</div>`; return; }
+    const N = data.needs, mon = addDays(mondayOf(today()), schedOffset*7), monIso = iso(mon), days = weekDays(mon);
+    const sun = addDays(mon, 6), through = N.through || "9999-12-31";
+    const chg = changedDays(monIso), mk = marks[monIso];
+    let tot = 0, nrm = 0, rows = "";
+    days.forEach(di => {
+      const d = parse(di), n = needsFor(di), nn = normalFor(di), h = hrs(n.blocks), hn = hrs(nn.blocks);
+      tot += h; nrm += hn;
+      const dh = h - hn, evs = staffEvents(di), isChg = chg.includes(di);
+      rows += `<tr class="${isChg ? "chg" : ""}">
+        <td class="dn"><b>${DOW[d.getDay()]}</b><span>${fmtShort(d)}</span>
+          ${evs.map(e => `<div class="ev"><i>${esc(timeLabel(e))}</i> ${esc(e.title)}</div>`).join("")}
+          ${n.stack ? `<div class="ev">Overlapping big events: the numbers are a minimum.</div>` : ""}
+          ${n.nohist ? `<div class="ev">No sales history yet for ${esc(n.nohist.join(", "))}: use judgment.</div>` : ""}
+          ${isChg ? `<span class="chgtag">Changed since you scheduled</span>` : ""}</td>
+        <td>${blocksHtml(n.blocks, "lunch")}</td>
+        <td>${blocksHtml(n.blocks, "dinner")}</td>
+        <td><div class="hrs">${fmtH(h)} h<small class="${dh > 0.05 ? "up" : dh < -0.05 ? "dnn" : "eq"}">${Math.abs(dh) < 0.05 ? "normal" : signed(dh) + " vs normal"}</small></div></td></tr>`;
+    });
+    const dt = tot - nrm;
+    let h = `<div class="sched"><div class="printonly">Anzalone Pizza · staffing needed · week of ${fmtShort(mon)} – ${fmtShort(sun)}</div>
+      <div class="whead noprint"><button class="tab" data-sw="-1" aria-label="Previous week" ${schedOffset<=0?"disabled style='opacity:.3'":""}>◀</button>
+      <h2>${schedOffset===0 ? "This week" : schedOffset===1 ? "Next week" : "Week of"} · ${fmtShort(mon)} – ${fmtShort(sun)}</h2>
+      <button class="tab" data-sw="1" aria-label="Next week" ${iso(addDays(sun,1)) > through ? "disabled style='opacity:.3'":""}>▶</button></div>`;
+    if(iso(sun) > through) h += `<div class="sflag">Part of this week is past the last planned date (${esc(through)}). Those days show normal staffing.</div>`;
+    if(mk && chg.length) h += `<div class="sflag noprint">${chg.length} day${chg.length>1?"s":""} changed since you marked this week as scheduled (${chg.map(di => DOW[parse(di).getDay()]).join(", ")}). Check the highlighted rows, then mark it again.</div>`;
+    else if(mk) h += `<div class="sok noprint">Marked as scheduled on ${esc(mk.at)}. Nothing has changed since.</div>`;
+    h += `<div class="sbar noprint"><span class="grow"></span>
+      ${mk ? `<button class="sbtn" data-unmark="${monIso}">Clear mark</button>` : ""}
+      <button class="sbtn" data-mark="${monIso}">${mk ? "Mark again (I updated it)" : "Mark week as scheduled"}</button>
+      <button class="sbtn pri" data-print="1">Print</button></div>
+      <table class="sg"><thead><tr><th>Day</th><th>Lunch</th><th>Dinner</th><th>Labor</th></tr></thead><tbody>${rows}</tbody></table>
+      <div class="stot"><span>Week total <b>${fmtH(tot)} h</b></span><span>Normal week <b>${fmtH(nrm)} h</b></span>
+        <span class="${dt > 0.05 ? "up" : dt < -0.05 ? "dnn" : "eq"}"><b>${Math.abs(dt) < 0.05 ? "Same as normal" : signed(dt) + " h"}</b>${Math.abs(dt) < 0.05 ? "" : ` (${dt>0?"+":"−"}${Math.round(Math.abs(dt)/nrm*100)}%) vs a normal week`}</span></div>
+      <div class="assume"><h3>Confirmed</h3><ul>${(N.assumptions.confirmed||[]).map(x => `<li>${esc(x)}</li>`).join("")}</ul>
+        ${(N.assumptions.assumed||[]).length ? `<h3>Assumed. Correct these if they are wrong</h3><ul class="a">${N.assumptions.assumed.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+        Labor hours = people × hours on the clock (lunch + dinner shifts). "Normal" = no events: lunch 2, dinner 4 on Fri, 3 on Sat, 2 other days.
+        Marking a week is saved on this device only.</div></div>`;
+    $("#main").innerHTML = h;
+  }
+
   function legend(extra){
     const hidden = data.events.filter(e => !visible(e) && !(off[e.cat] === undefined && data.categories[e.cat].defaultOff)).length;
     const bad = (data.sources || []).filter(s => !s.ok);
@@ -345,20 +472,26 @@ body.is-offline .offline{display:block}
 
   function render(){
     document.querySelectorAll(".tab[data-view]").forEach(b => b.setAttribute("aria-selected", b.dataset.view===view));
-    renderFilters(); staleCheck();
-    if(view === "month") renderMonth(); else if(view === "week") renderWeek(); else renderToday();
+    renderFilters(); staleCheck(); schedBadge();
+    if(view === "schedule") renderSchedule(); else if(view === "month") renderMonth(); else if(view === "week") renderWeek(); else renderToday();
   }
 
   document.addEventListener("click", ev => {
     const b = ev.target.closest("button"); if(!b || b.disabled) return;
     if(b.id === "fbtn"){ filtersOpen = !filtersOpen; renderFilters(); }
-    else if(b.dataset.view){ view = b.dataset.view; weekOffset = 0; monthOffset = 0; store.set("view2", view); render(); }
+    else if(b.dataset.view){ view = b.dataset.view; weekOffset = 0; monthOffset = 0; schedOffset = 1; store.set("view2", view); render(); }
     else if(b.dataset.cat){ off[b.dataset.cat] = !isOff(b.dataset.cat); store.set("hidden", off); render(); }
     else if(b.dataset.imp){ offImp[b.dataset.imp] = !offImp[b.dataset.imp]; store.set("hiddenImp", offImp); render(); }
     else if(b.dataset.all){ off = Object.fromEntries(Object.keys(data.categories).map(k => [k, false])); offImp = {};
       store.set("hidden", off); store.set("hiddenImp", offImp); render(); }
     else if(b.dataset.w){ weekOffset = Math.max(0, weekOffset + Number(b.dataset.w)); renderWeek(); }
     else if(b.dataset.m){ monthOffset += Number(b.dataset.m); renderMonth(); }
+    else if(b.dataset.sw){ schedOffset = Math.max(0, schedOffset + Number(b.dataset.sw)); renderSchedule(); }
+    else if(b.dataset.print){ window.print(); }
+    else if(b.dataset.mark){
+      marks[b.dataset.mark] = {at: iso(today()), days: Object.fromEntries(weekDays(parse(b.dataset.mark)).map(di => [di, daySig(di)]))};
+      store.set("sched", marks); render(); }
+    else if(b.dataset.unmark){ delete marks[b.dataset.unmark]; store.set("sched", marks); render(); }
     else if(b.dataset.day){
       const d = parse(b.dataset.day), list = eventsOn(b.dataset.day), L = level(list), isT = b.dataset.day === iso(today());
       $("#dlgBody").innerHTML = `<section class="hero st ${LV[L][1]}" style="padding:16px 20px">

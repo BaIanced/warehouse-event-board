@@ -13,7 +13,7 @@ A simple installable web app (PWA) for the Warehouse Food Hall KDS. It shows upc
 Every event in `events.json` carries a `src` link to where its date came from.
 
 ## Using it
-- Two views: **Next 2 weeks** and **Month**. Tap a day in Month view for details.
+- Views: **Today**, **This Week**, **Month** and **Schedule**. Tap a day in Month view for details.
 - Tap the colored chips to hide or show event types and impact levels. Choices are saved per device.
 - The page refreshes its data every hour and redraws at midnight, so it can stay open on the KDS.
 - Works offline with the last saved schedule.
@@ -37,3 +37,9 @@ The refresh now runs inside this repo. No Claude connector or scheduled task is 
 - `tools/build_events.py` holds the hand-checked rows (conventions from organizer pages, festivals, Warehouse one-offs), merges in `data/auto.json`, and writes `events.json`. `events.json` is built during the run and is no longer stored in the repo.
 - If a site is down or changes its layout, that one source keeps its last good rows and the board says which source it couldn't reach. If the board itself goes 3+ days without a refresh, a banner appears on screen.
 - A script can't read the Warehouse site, downtownboise.org listings, or convention organizer pages. Those rows are edited by hand in `tools/build_events.py` (see the `WATCH` list there), about once a month.
+
+## Schedule view and shift needs (Phase 1, draft)
+
+- The **Schedule** tab shows one Monday-Sunday week as a day-by-shift grid (lunch and dinner headcount, with extra "rush" people and their times), labor hours against a normal week, and a Print button. "Mark week as scheduled" is saved on that device only; if an event in that week is later added, moved or cancelled, the day is flagged.
+- `tools/build_events.py` writes a public `needs` key into `events.json`: `normal` (per weekday), `days` (only dates with a tracked event; any other date uses `normal`), `assumptions`, `through`. Blocks are `{shift, start, end, n, kind}` where `kind: "rush"` means extra people on top of the base. Times are 24h Boise time. There are no names or personal data in it.
+- Store hours are confirmed (owner, 2026-11-17). Shift times, rush windows and the other assumptions are listed on the Schedule tab and at the top of the "Shift needs" section of `build_events.py`; edit the constants there when the owner corrects them.
