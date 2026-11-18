@@ -1,61 +1,61 @@
 {
- "checked": "2026-11-17",
+ "checked": "2026-11-18",
  "sources": {
   "ica": {
    "label": "Idaho Central Arena",
    "url": "https://idahocentralarena.com/events/",
    "ok": true,
-   "last_ok": "2026-11-17",
+   "last_ok": "2026-11-18",
    "count": 35
   },
   "fb": {
    "label": "Bronco football",
    "url": "https://broncosports.com/sports/football/schedule",
    "ok": true,
-   "last_ok": "2026-11-17",
+   "last_ok": "2026-11-18",
    "count": 1
   },
   "mbb": {
    "label": "Bronco men's basketball",
    "url": "https://broncosports.com/sports/mens-basketball/schedule",
    "ok": true,
-   "last_ok": "2026-11-17",
+   "last_ok": "2026-11-18",
    "count": 13
   },
   "wbb": {
    "label": "Bronco women's basketball",
    "url": "https://broncosports.com/sports/womens-basketball/schedule",
    "ok": true,
-   "last_ok": "2026-11-17",
+   "last_ok": "2026-11-18",
    "count": 14
   },
   "boisecentre": {
    "label": "Boise Centre",
    "url": "https://www.boisecentre.com/attend/events/",
    "ok": true,
-   "last_ok": "2026-11-17",
+   "last_ok": "2026-11-18",
    "count": 2
   },
   "tmh": {
    "label": "Treefort Music Hall",
    "url": "https://treefortmusichall.com/shows/",
    "ok": true,
-   "last_ok": "2026-11-17",
-   "count": 41
+   "last_ok": "2026-11-18",
+   "count": 42
   },
   "knit": {
    "label": "Knitting Factory",
    "url": "https://bo.knittingfactory.com/",
    "ok": true,
-   "last_ok": "2026-11-17",
+   "last_ok": "2026-11-18",
    "count": 12
   },
   "weather": {
    "label": "Weather forecast",
    "url": "https://api.weather.gov/gridpoints/BOI/133,86/forecast",
    "ok": true,
-   "last_ok": "2026-11-17",
-   "count": 8
+   "last_ok": "2026-11-18",
+   "count": 7
   }
  },
  "events": {
@@ -1107,6 +1107,17 @@
     "venue": "Treefort Music Hall (722 W Broad St)",
     "impact": "low",
     "src": "https://treefortmusichall.com/shows/grace-potter-the-trespassers",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Grateful Shred",
+    "start": "2027-03-17",
+    "end": "2027-03-17",
+    "time": "6:30 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/grateful-shred-27",
     "note": "Time shown is doors"
    },
    {
