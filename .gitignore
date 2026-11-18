@@ -1,3 +1,5 @@
 icons/
 _site/
 __pycache__/
+events.json
+data/weather.json

@@ -1,0 +1,1335 @@
+{
+ "checked": "2026-11-17",
+ "sources": {
+  "ica": {
+   "label": "Idaho Central Arena",
+   "url": "https://idahocentralarena.com/events/",
+   "ok": true,
+   "last_ok": "2026-11-17",
+   "count": 35
+  },
+  "fb": {
+   "label": "Bronco football",
+   "url": "https://broncosports.com/sports/football/schedule",
+   "ok": true,
+   "last_ok": "2026-11-17",
+   "count": 1
+  },
+  "mbb": {
+   "label": "Bronco men's basketball",
+   "url": "https://broncosports.com/sports/mens-basketball/schedule",
+   "ok": true,
+   "last_ok": "2026-11-17",
+   "count": 13
+  },
+  "wbb": {
+   "label": "Bronco women's basketball",
+   "url": "https://broncosports.com/sports/womens-basketball/schedule",
+   "ok": true,
+   "last_ok": "2026-11-17",
+   "count": 14
+  },
+  "boisecentre": {
+   "label": "Boise Centre",
+   "url": "https://www.boisecentre.com/attend/events/",
+   "ok": true,
+   "last_ok": "2026-11-17",
+   "count": 2
+  },
+  "tmh": {
+   "label": "Treefort Music Hall",
+   "url": "https://treefortmusichall.com/shows/",
+   "ok": true,
+   "last_ok": "2026-11-17",
+   "count": 41
+  },
+  "knit": {
+   "label": "Knitting Factory",
+   "url": "https://bo.knittingfactory.com/",
+   "ok": true,
+   "last_ok": "2026-11-17",
+   "count": 12
+  },
+  "weather": {
+   "label": "Weather forecast",
+   "url": "https://api.weather.gov/gridpoints/BOI/133,86/forecast",
+   "ok": true,
+   "last_ok": "2026-11-17",
+   "count": 8
+  }
+ },
+ "events": {
+  "ica": [
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Maine Mariners",
+    "start": "2026-11-18",
+    "end": "2026-11-18",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-maine-mariners/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Maine Mariners",
+    "start": "2026-11-20",
+    "end": "2026-11-20",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-maine-mariners-2/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Maine Mariners",
+    "start": "2026-11-21",
+    "end": "2026-11-21",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-maine-mariners-3/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Rapid City Rush",
+    "start": "2026-12-02",
+    "end": "2026-12-02",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-rapid-city-rush-5/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Rapid City Rush",
+    "start": "2026-12-04",
+    "end": "2026-12-04",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-rapid-city-rush-6/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Rapid City Rush",
+    "start": "2026-12-05",
+    "end": "2026-12-05",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-rapid-city-rush/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Rapid City Rush",
+    "start": "2026-12-06",
+    "end": "2026-12-06",
+    "time": "4:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-rapid-city-rush-7/",
+    "doors": "3:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Tulsa Oilers",
+    "start": "2026-12-09",
+    "end": "2026-12-09",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-tulsa-oilers-5/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Tulsa Oilers",
+    "start": "2026-12-11",
+    "end": "2026-12-11",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-tulsa-oilers-4/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Tulsa Oilers",
+    "start": "2026-12-12",
+    "end": "2026-12-12",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-tulsa-oilers-3/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "music",
+    "title": "Front Street Fights 37",
+    "start": "2026-12-18",
+    "end": "2026-12-18",
+    "time": "7:00 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/front-street-fights-37/",
+    "doors": "6:00 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs New Mexico Goatheads",
+    "start": "2026-12-30",
+    "end": "2026-12-30",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-new-mexico-goatheads/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs New Mexico Goatheads",
+    "start": "2027-01-01",
+    "end": "2027-01-01",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-new-mexico-goatheads-2/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs New Mexico Goatheads",
+    "start": "2027-01-02",
+    "end": "2027-01-02",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-new-mexico-goatheads-3/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Wichita Thunder",
+    "start": "2027-01-20",
+    "end": "2027-01-20",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-wichita-thunder-3/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Wichita Thunder",
+    "start": "2027-01-22",
+    "end": "2027-01-22",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-wichita-thunder-2/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Wichita Thunder",
+    "start": "2027-01-23",
+    "end": "2027-01-23",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-wichita-thunder/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs New Mexico Goatheads",
+    "start": "2027-02-03",
+    "end": "2027-02-03",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-new-mexico-goatheads-4/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs New Mexico Goatheads",
+    "start": "2027-02-05",
+    "end": "2027-02-05",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-new-mexico-goatheads-5/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs New Mexico Goatheads",
+    "start": "2027-02-06",
+    "end": "2027-02-06",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-new-mexico-goatheads-6/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Rapid City Rush",
+    "start": "2027-02-24",
+    "end": "2027-02-24",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-rapid-city-rush-9/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Rapid City Rush",
+    "start": "2027-02-26",
+    "end": "2027-02-26",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-allen-americans-4/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Rapid City Rush",
+    "start": "2027-02-27",
+    "end": "2027-02-27",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-allen-americans-3/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Rapid City Rush",
+    "start": "2027-02-28",
+    "end": "2027-02-28",
+    "time": "4:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-rapid-city-rush-8/",
+    "doors": "3:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Tulsa Oilers",
+    "start": "2027-03-12",
+    "end": "2027-03-12",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-tulsa-oilers/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Tulsa Oilers",
+    "start": "2027-03-13",
+    "end": "2027-03-13",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-tulsa-oilers-2/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Tahoe Knight Monsters",
+    "start": "2027-03-17",
+    "end": "2027-03-17",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-tahoe-knight-monsters/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Tahoe Knight Monsters",
+    "start": "2027-03-19",
+    "end": "2027-03-19",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-tahoe-knight-monsters-2/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Tahoe Knight Monsters",
+    "start": "2027-03-20",
+    "end": "2027-03-20",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-tahoe-knight-monsters-3/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Kalamazoo Wings",
+    "start": "2027-03-31",
+    "end": "2027-03-31",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-kalamazoo-wings-3/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Kalamazoo Wings",
+    "start": "2027-04-02",
+    "end": "2027-04-02",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-kalamazoo-wings-2/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Kalamazoo Wings",
+    "start": "2027-04-03",
+    "end": "2027-04-03",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-kalamazoo-wings/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Kansas City Mavericks",
+    "start": "2027-04-07",
+    "end": "2027-04-07",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-kansas-city-mavericks-3/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Kansas City Mavericks",
+    "start": "2027-04-09",
+    "end": "2027-04-09",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-kansas-city-mavericks-2/",
+    "doors": "6:15 PM"
+   },
+   {
+    "cat": "hockey",
+    "title": "Steelheads vs Kansas City Mavericks",
+    "start": "2027-04-10",
+    "end": "2027-04-10",
+    "time": "7:10 PM",
+    "venue": "Idaho Central Arena (next door)",
+    "impact": "high",
+    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-kansas-city-mavericks/",
+    "doors": "6:15 PM"
+   }
+  ],
+  "fb": [
+   {
+    "cat": "football",
+    "title": "Broncos football vs San Diego State",
+    "start": "2026-11-21",
+    "end": "2026-11-21",
+    "time": "7:30 PM",
+    "venue": "Albertsons Stadium (campus)",
+    "impact": "high",
+    "src": "https://broncosports.com/sports/football/schedule"
+   }
+  ],
+  "mbb": [
+   {
+    "cat": "mbb",
+    "title": "Broncos men's hoops vs Sam Houston",
+    "start": "2026-11-20",
+    "end": "2026-11-20",
+    "time": "7:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   },
+   {
+    "cat": "mbb",
+    "title": "Broncos men's hoops vs Idaho State",
+    "start": "2026-11-24",
+    "end": "2026-11-24",
+    "time": "7:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   },
+   {
+    "cat": "mbb",
+    "title": "Broncos men's hoops vs Texas A&M - Corpus Christi",
+    "start": "2026-12-12",
+    "end": "2026-12-12",
+    "time": "12:30 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   },
+   {
+    "cat": "mbb",
+    "title": "Broncos men's hoops vs Utah Valley",
+    "start": "2026-12-16",
+    "end": "2026-12-16",
+    "time": "7:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   },
+   {
+    "cat": "mbb",
+    "title": "Broncos men's hoops vs Lamar",
+    "start": "2026-12-29",
+    "end": "2026-12-29",
+    "time": "7:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   },
+   {
+    "cat": "mbb",
+    "title": "Broncos men's hoops vs Oregon State",
+    "start": "2027-01-09",
+    "end": "2027-01-09",
+    "time": "7:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   },
+   {
+    "cat": "mbb",
+    "title": "Broncos men's hoops vs Washington State",
+    "start": "2027-01-13",
+    "end": "2027-01-13",
+    "time": "7:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   },
+   {
+    "cat": "mbb",
+    "title": "Broncos men's hoops vs San Diego State",
+    "start": "2027-01-23",
+    "end": "2027-01-23",
+    "time": "8:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   },
+   {
+    "cat": "mbb",
+    "title": "Broncos men's hoops vs Utah State",
+    "start": "2027-01-27",
+    "end": "2027-01-27",
+    "time": "8:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   },
+   {
+    "cat": "mbb",
+    "title": "Broncos men's hoops vs Gonzaga",
+    "start": "2027-02-10",
+    "end": "2027-02-10",
+    "time": "6:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   },
+   {
+    "cat": "mbb",
+    "title": "Broncos men's hoops vs Fresno State",
+    "start": "2027-02-13",
+    "end": "2027-02-13",
+    "time": "2:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   },
+   {
+    "cat": "mbb",
+    "title": "Broncos men's hoops vs Texas State",
+    "start": "2027-02-20",
+    "end": "2027-02-20",
+    "time": "4:30 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   },
+   {
+    "cat": "mbb",
+    "title": "Broncos men's hoops vs Colorado State",
+    "start": "2027-03-03",
+    "end": "2027-03-03",
+    "time": "8:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/mens-basketball/schedule"
+   }
+  ],
+  "wbb": [
+   {
+    "cat": "wbb",
+    "title": "Broncos women's hoops vs UC Davis",
+    "start": "2026-11-22",
+    "end": "2026-11-22",
+    "time": "2:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   },
+   {
+    "cat": "wbb",
+    "title": "Broncos women's hoops vs Sacramento State",
+    "start": "2026-12-11",
+    "end": "2026-12-11",
+    "time": "6:30 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   },
+   {
+    "cat": "wbb",
+    "title": "Broncos women's hoops vs Santa Clara",
+    "start": "2026-12-13",
+    "end": "2026-12-13",
+    "time": "2:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   },
+   {
+    "cat": "wbb",
+    "title": "Broncos women's hoops vs UC Riverside",
+    "start": "2026-12-20",
+    "end": "2026-12-20",
+    "time": "2:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   },
+   {
+    "cat": "wbb",
+    "title": "Broncos women's hoops vs Saint Mary's",
+    "start": "2026-12-22",
+    "end": "2026-12-22",
+    "time": "2:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   },
+   {
+    "cat": "wbb",
+    "title": "Broncos women's hoops vs South Dakota",
+    "start": "2026-12-31",
+    "end": "2026-12-31",
+    "time": "2:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   },
+   {
+    "cat": "wbb",
+    "title": "Broncos women's hoops vs Washington State",
+    "start": "2027-01-14",
+    "end": "2027-01-14",
+    "time": "6:30 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   },
+   {
+    "cat": "wbb",
+    "title": "Broncos women's hoops vs Gonzaga",
+    "start": "2027-01-16",
+    "end": "2027-01-16",
+    "time": "2:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   },
+   {
+    "cat": "wbb",
+    "title": "Broncos women's hoops vs Colorado State",
+    "start": "2027-01-24",
+    "end": "2027-01-24",
+    "time": "2:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   },
+   {
+    "cat": "wbb",
+    "title": "Broncos women's hoops vs Texas State",
+    "start": "2027-02-06",
+    "end": "2027-02-06",
+    "time": "2:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   },
+   {
+    "cat": "wbb",
+    "title": "Broncos women's hoops vs Utah State",
+    "start": "2027-02-11",
+    "end": "2027-02-11",
+    "time": "6:30 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   },
+   {
+    "cat": "wbb",
+    "title": "Broncos women's hoops vs San Diego State",
+    "start": "2027-02-14",
+    "end": "2027-02-14",
+    "time": "2:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   },
+   {
+    "cat": "wbb",
+    "title": "Broncos women's hoops vs Oregon State",
+    "start": "2027-02-24",
+    "end": "2027-02-24",
+    "time": "6:30 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   },
+   {
+    "cat": "wbb",
+    "title": "Broncos women's hoops vs Fresno State",
+    "start": "2027-03-06",
+    "end": "2027-03-06",
+    "time": "2:00 PM",
+    "venue": "ExtraMile Arena (campus)",
+    "impact": "low",
+    "src": "https://broncosports.com/sports/womens-basketball/schedule"
+   }
+  ],
+  "boisecentre": [
+   {
+    "cat": "convention",
+    "title": "Wintry Market",
+    "start": "2026-11-20",
+    "end": "2026-11-21",
+    "time": "All day",
+    "venue": "Boise Centre (across the street)",
+    "impact": "med",
+    "src": "https://www.wintrymarket.com/",
+    "note": "Boise Centre lists this as: Consumer/Public"
+   },
+   {
+    "cat": "convention",
+    "title": "2026 Festival of Trees",
+    "start": "2026-11-24",
+    "end": "2026-11-30",
+    "time": "All day",
+    "venue": "Boise Centre (across the street)",
+    "impact": "med",
+    "src": "https://www.saintalphonsus.org/foundation/events/festival-of-trees/admission-and-attractions",
+    "note": "Boise Centre lists this as: Consumer/Public"
+   }
+  ],
+  "tmh": [
+   {
+    "cat": "shows",
+    "title": "After Hours Music Talk: \u201cRock n\u2019 Roll Radio Let\u2019s Go! with KEXP\u201d",
+    "start": "2026-11-18",
+    "end": "2026-11-18",
+    "time": "5:30 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/afterhours",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Neptune Moon",
+    "start": "2026-11-18",
+    "end": "2026-11-18",
+    "time": "7:30 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/mega-show",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "The Brothers Comatose",
+    "start": "2026-11-19",
+    "end": "2026-11-19",
+    "time": "7:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/the-brothers-comatose-2026",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Canceled \u2013 Dead Poet Society",
+    "start": "2026-11-20",
+    "end": "2026-11-20",
+    "time": "6:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/dead-poet-society",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Gasolina Reggaet\u00f3n",
+    "start": "2026-11-20",
+    "end": "2026-11-20",
+    "time": "9:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/gasolina-reggaeton",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Pop-Up Box Office",
+    "start": "2026-11-21",
+    "end": "2026-11-21",
+    "time": "12:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/pop-up-box-office-november26",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "YOOKiE",
+    "start": "2026-11-21",
+    "end": "2026-11-21",
+    "time": "7:30 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/yookie",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Clarion",
+    "start": "2026-11-22",
+    "end": "2026-11-22",
+    "time": "7:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/clarion",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "DRINKURWATER",
+    "start": "2026-11-25",
+    "end": "2026-11-25",
+    "time": "8:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/drinkurwater",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Bingo Loco (Early \u2013 November Show)",
+    "start": "2026-11-27",
+    "end": "2026-11-27",
+    "time": "5:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/bingo-loco-early-november-show-2",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Bingo Loco (Late \u2013 November Show)",
+    "start": "2026-11-27",
+    "end": "2026-11-27",
+    "time": "9:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/bingo-loco-late-november-show-2026",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Clemy\u2019s Crew Presents \u2013 A Concert for Compassion",
+    "start": "2026-11-28",
+    "end": "2026-11-28",
+    "time": "4:30 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/a-concert-for-compassion-2026",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Cat Clyde",
+    "start": "2026-11-29",
+    "end": "2026-11-29",
+    "time": "7:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/cat-clyde-dean-johnson",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Solitary Band \u2013 The Neil Diamond Experience",
+    "start": "2026-12-01",
+    "end": "2026-12-01",
+    "time": "6:30 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/solitary-band-night-1",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Solitary Band \u2013 The Neil Diamond Experience",
+    "start": "2026-12-02",
+    "end": "2026-12-02",
+    "time": "6:30 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/solitary-band-night-2",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "The Grouch & Eligh",
+    "start": "2026-12-03",
+    "end": "2026-12-03",
+    "time": "7:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/the-grouch-eligh-26",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Whitechapel",
+    "start": "2026-12-04",
+    "end": "2026-12-04",
+    "time": "6:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/whitechapel",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "SVDDEN DEATH",
+    "start": "2026-12-05",
+    "end": "2026-12-05",
+    "time": "7:30 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/svdden-death",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Suicide Silence",
+    "start": "2026-12-06",
+    "end": "2026-12-06",
+    "time": "6:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/suicide-silence",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Girl Winter Film Tour",
+    "start": "2026-12-09",
+    "end": "2026-12-09",
+    "time": "6:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/girl-winter-film-tour",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "KNOW GOOD",
+    "start": "2026-12-12",
+    "end": "2026-12-12",
+    "time": "7:30 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/know-good",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Treefort For Good Bingo Fundraiser",
+    "start": "2026-12-16",
+    "end": "2026-12-16",
+    "time": "6:30 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/tfg-bingo-fundraiser-2026",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Bingo Loco (Early \u2013 December Show)",
+    "start": "2026-12-18",
+    "end": "2026-12-18",
+    "time": "5:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/bingo-loco-early-december-show-26",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Bingo Loco (Late \u2013 December Show)",
+    "start": "2026-12-18",
+    "end": "2026-12-18",
+    "time": "9:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/bingo-loco-late-december-show-26",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Deorro",
+    "start": "2026-12-19",
+    "end": "2026-12-19",
+    "time": "7:30 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/deorro-2026",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Afrosonics",
+    "start": "2026-12-26",
+    "end": "2026-12-26",
+    "time": "7:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/afrosonics-2026",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Kawaii Rave",
+    "start": "2027-01-09",
+    "end": "2027-01-09",
+    "time": "9:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/kawaii-rave",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "YDG",
+    "start": "2027-01-16",
+    "end": "2027-01-16",
+    "time": "7:30 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/ydg",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "AJ McLean",
+    "start": "2027-01-21",
+    "end": "2027-01-21",
+    "time": "7:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/aj-mclean",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Little Stranger",
+    "start": "2027-02-10",
+    "end": "2027-02-10",
+    "time": "7:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/little-stranger-2027",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "The Lemonheads",
+    "start": "2027-03-12",
+    "end": "2027-03-12",
+    "time": "7:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/the-lemonheads",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Grace Potter & The Trespassers",
+    "start": "2027-03-16",
+    "end": "2027-03-16",
+    "time": "7:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/grace-potter-the-trespassers",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Wheeler Walker Jr.",
+    "start": "2027-03-21",
+    "end": "2027-03-21",
+    "time": "7:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/wheeler-walker-jr",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Liquid Stranger",
+    "start": "2027-03-26",
+    "end": "2027-03-26",
+    "time": "7:30 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/liquid-stranger",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "moe.",
+    "start": "2027-04-07",
+    "end": "2027-04-07",
+    "time": "7:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/moe",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "The Chats",
+    "start": "2027-04-13",
+    "end": "2027-04-13",
+    "time": "7:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/the-chats",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Dad Rock Night",
+    "start": "2027-04-16",
+    "end": "2027-04-16",
+    "time": "7:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/dad-rock-night",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Haute & Freddy",
+    "start": "2027-05-17",
+    "end": "2027-05-17",
+    "time": "7:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/haute-freddy",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Hazlett",
+    "start": "2027-05-22",
+    "end": "2027-05-22",
+    "time": "7:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/hazlett-2027",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "They Might Be Giants",
+    "start": "2027-06-08",
+    "end": "2027-06-08",
+    "time": "7:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/they-might-be-giants",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Mat Kearney",
+    "start": "2027-09-01",
+    "end": "2027-09-01",
+    "time": "7:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/mat-kearney",
+    "note": "Time shown is doors"
+   }
+  ],
+  "knit": [
+   {
+    "cat": "shows",
+    "title": "Tito's Presents: MUSIC BINGO NIGHT",
+    "start": "2026-11-19",
+    "end": "2026-11-19",
+    "time": "7:00 PM",
+    "venue": "Knitting Factory (416 S 9th St)",
+    "impact": "low",
+    "src": "https://bo.knittingfactory.com/tm-event/music-bingo-nights/"
+   },
+   {
+    "cat": "shows",
+    "title": "Scott Bradlee\u2019s Postmodern Jukebox \u2013 The Future Is Vintage World Tour",
+    "start": "2026-11-20",
+    "end": "2026-11-20",
+    "time": "8:00 PM",
+    "venue": "Knitting Factory (416 S 9th St)",
+    "impact": "low",
+    "src": "https://bo.knittingfactory.com/tm-event/scott-bradlees-postmodern-jukebox-the-future-is-vintage-world-tour/"
+   },
+   {
+    "cat": "shows",
+    "title": "INZO Local Void Takeover",
+    "start": "2026-11-21",
+    "end": "2026-11-21",
+    "time": "8:00 PM",
+    "venue": "Knitting Factory (416 S 9th St)",
+    "impact": "low",
+    "src": "https://bo.knittingfactory.com/tm-event/inzo-local-void-takeover/"
+   },
+   {
+    "cat": "shows",
+    "title": "Saosin: 20 Years of Self-Titled",
+    "start": "2026-11-22",
+    "end": "2026-11-22",
+    "time": "7:00 PM",
+    "venue": "Knitting Factory (416 S 9th St)",
+    "impact": "low",
+    "src": "https://bo.knittingfactory.com/tm-event/saosin-20-years-of-self-titled/"
+   },
+   {
+    "cat": "shows",
+    "title": "DynaDuo Presents: Dark Harvest IV",
+    "start": "2026-11-28",
+    "end": "2026-11-28",
+    "time": "7:00 PM",
+    "venue": "Knitting Factory (416 S 9th St)",
+    "impact": "low",
+    "src": "https://bo.knittingfactory.com/tm-event/dynaduo-presents-dark-harvest-iv/"
+   },
+   {
+    "cat": "shows",
+    "title": "UpDating",
+    "start": "2026-12-01",
+    "end": "2026-12-01",
+    "time": "8:00 PM",
+    "venue": "Knitting Factory (416 S 9th St)",
+    "impact": "low",
+    "src": "https://bo.knittingfactory.com/tm-event/updating/"
+   },
+   {
+    "cat": "shows",
+    "title": "Atliens \u2013 Destruction of a Ufo Tour",
+    "start": "2026-12-02",
+    "end": "2026-12-02",
+    "time": "8:00 PM",
+    "venue": "Knitting Factory (416 S 9th St)",
+    "impact": "low",
+    "src": "https://bo.knittingfactory.com/tm-event/atliens-destruction-of-a-ufo-tour/"
+   },
+   {
+    "cat": "shows",
+    "title": "DENNETT \u2013 Back to the Roadhouse Tour 2026",
+    "start": "2026-12-03",
+    "end": "2026-12-03",
+    "time": "8:00 PM",
+    "venue": "Knitting Factory (416 S 9th St)",
+    "impact": "low",
+    "src": "https://bo.knittingfactory.com/tm-event/dennett-back-to-the-roadhouse-tour-2026/"
+   },
+   {
+    "cat": "shows",
+    "title": "Andy Grammer \u2013 Greater Than Pt. II: A One Man Show",
+    "start": "2026-12-09",
+    "end": "2026-12-09",
+    "time": "8:00 PM",
+    "venue": "Knitting Factory (416 S 9th St)",
+    "impact": "low",
+    "src": "https://bo.knittingfactory.com/tm-event/andy-grammer-greater-than-pt-ii-a-one-man-show/"
+   },
+   {
+    "cat": "shows",
+    "title": "Missio , Ryan Oakes, WRUNG",
+    "start": "2026-12-15",
+    "end": "2026-12-15",
+    "time": "7:00 PM",
+    "venue": "Knitting Factory (416 S 9th St)",
+    "impact": "low",
+    "src": "https://bo.knittingfactory.com/tm-event/missio-ryan-oakes-wrung/"
+   },
+   {
+    "cat": "shows",
+    "title": "BANGER ON A BUDGET",
+    "start": "2026-12-18",
+    "end": "2026-12-18",
+    "time": "7:00 PM",
+    "venue": "Knitting Factory (416 S 9th St)",
+    "impact": "low",
+    "src": "https://bo.knittingfactory.com/tm-event/banger-on-a-budget/"
+   },
+   {
+    "cat": "shows",
+    "title": "Emo Nite",
+    "start": "2026-12-19",
+    "end": "2026-12-19",
+    "time": "9:00 PM",
+    "venue": "Knitting Factory (416 S 9th St)",
+    "impact": "low",
+    "src": "https://bo.knittingfactory.com/tm-event/emo-nite/"
+   }
+  ]
+ }
+}

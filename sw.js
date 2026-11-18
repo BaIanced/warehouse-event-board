@@ -1,5 +1,5 @@
 // Service worker: app shell cache-first, events.json network-first (falls back to last copy offline).
-const SHELL = "eventboard-shell-v5";
+const SHELL = "eventboard-shell-v6";
 const DATA = "eventboard-data";
 const SHELL_FILES = ["./", "index.html", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png"];
 

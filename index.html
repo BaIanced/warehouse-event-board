@@ -106,6 +106,19 @@ main{padding:18px 16px 40px;max-width:1000px;margin:0 auto}
 .cell .dots{display:flex;gap:4px;flex-wrap:wrap}
 .cell .dots i{width:10px;height:10px;border-radius:50%;background:var(--c)}
 
+/* day facts: staffing plan, weather, calendar notes */
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.tag{display:inline-flex;align-items:center;gap:6px;border-radius:10px;padding:6px 12px;font-size:.95rem;
+  background:var(--panel2);border:1px solid var(--line);color:var(--text)}
+.tag.plan{background:#fff;color:#111;border-color:#fff;font-weight:800}
+.tag.warn{background:#5a3e0e;border-color:#8a6212;color:#ffe0a3;font-weight:700}
+.tag.wx{color:#cfe3ff}.tag.wx.wet{background:#1d3350;border-color:#2c4d78}
+.tag.cal{color:var(--dim)}
+.row .meta{grid-column:1 / -1;margin-top:2px}
+.row .tag{font-size:.82rem;padding:4px 10px}
+.card .chk{margin-top:8px;color:#ffe0a3;font-weight:700}
+.stale{display:none;background:#8a6212;color:#fff;text-align:center;font-size:.95rem;font-weight:700;padding:8px 12px}
+body.is-stale .stale{display:block}
 dialog{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:16px;max-width:720px;width:calc(100% - 32px);padding:18px}
 dialog::backdrop{background:rgba(0,0,0,.6)}
 .legend{color:var(--dim);font-size:.8rem;margin-top:24px;line-height:1.6}
@@ -122,6 +135,7 @@ body.is-offline .offline{display:block}
 </head>
 <body>
 <div class="offline">Offline — showing the last saved schedule</div>
+<div class="stale" id="stale"></div>
 <header>
   <div class="top">
     <h1>Warehouse <span>Event Board</span></h1>
@@ -194,6 +208,26 @@ body.is-offline .offline{display:block}
     if(e.impact === "low") return "On campus — small effect downtown.";
     return m != null ? `On campus — maybe some traffic around ${clock(m-90)} and after.` : "On campus — maybe some traffic before and after.";
   }
+  // Day facts under the status: staffing plan (highest number any event calls for), weather, calendar notes
+  function dayMeta(di, small){
+    const out = [], p = (data.plan || {})[di], d = parse(di);
+    const hasVisible = eventsOn(di).length > 0;
+    if(p && hasVisible){
+      out.push(`<span class="tag plan">Plan: lunch ${p.lunch} · dinner ${p.dinner}</span>`);
+      if(!small && p.dinner > p.base) out.push(`<span class="tag cal">Normal ${DOWL[d.getDay()]} dinner is ${p.base}${p.why ? " · raised for " + esc(p.why) : ""}</span>`);
+      if(p.stack) out.push(`<span class="tag warn">${p.stack} big events overlap — plan is a minimum, no sales history for doubles</span>`);
+      if(p.nohist) out.push(`<span class="tag warn">No sales history yet for ${esc(p.nohist.join(", "))} — use judgment</span>`);
+    }
+    const w = (data.weather || []).find(x => x.date === di);
+    if(w){
+      const temp = w.hi != null ? `${w.hi}°${w.lo != null ? " / " + w.lo + "°" : ""}` : `Low ${w.lo}°`;
+      const wet = (w.pop || 0) >= 50;
+      out.push(`<span class="tag wx ${wet ? "wet" : ""}">${temp} · ${esc(w.text || "")}${(w.pop || 0) >= 30 ? " · " + w.pop + "% precip" : ""}</span>`);
+    }
+    (data.context || []).filter(c => c.start <= di && c.end >= di)
+      .forEach(c => out.push(`<span class="tag cal">${esc(c.label)}</span>`));
+    return out.length ? `<div class="meta">${out.join("")}</div>` : "";
+  }
   const shortVenue = v => v.replace(/ \((next door|across the street|campus)\)/, " · $1");
   const daysSpan = e => e.start !== e.end ? ` · ${fmtShort(parse(e.start))}–${fmtShort(parse(e.end))}` : "";
 
@@ -204,7 +238,8 @@ body.is-offline .offline{display:block}
     return `<article class="card ${past?"past":""}" style="--c:${c}">
       <div class="tm">${esc(timeLabel(e))}<small>${esc(data.categories[e.cat].label)}</small></div>
       <div><div class="ti">${esc(e.title)}</div>
-        <div class="ve">${esc(shortVenue(e.venue))}${esc(daysSpan(e))}</div>
+        <div class="ve">${esc(shortVenue(e.venue))}${esc(daysSpan(e))}${e.doors ? " · Doors " + esc(e.doors) : ""}</div>
+        ${e.check ? `<div class="chk">Not on the official schedule for this date any more — verify before staffing for it.</div>` : ""}
         <div class="tip">${esc(tip(e))}</div>
         ${e.staff ? `<div class="staff">${esc(e.staff)}</div>` : ""}
         ${e.note ? `<div class="ve">${esc(e.note)}</div>` : ""}</div>
@@ -217,7 +252,7 @@ body.is-offline .offline{display:block}
       : list.length === 1 ? "1 event today" : `${list.length} events today`;
     let h = `<div class="todayzone z${L}"><section class="hero st ${LV[L][1]}">
       <div><div class="when">Today · ${DOWL[t.getDay()]}, ${fmtShort(t)}</div><div class="big">${LV[L][0]}</div></div>
-      <div class="sum">${sum}</div></section>`;
+      <div class="sum">${sum}</div></section>${dayMeta(iso(t))}`;
     h += list.length ? `<div class="list">${list.map(e => card(e, true)).join("")}</div>`
                      : `<div class="empty">Regular staffing — nothing tracked nearby today.</div>`;
     h += `</div><div class="later-h">Coming up · not today</div><div class="later">`;
@@ -250,6 +285,7 @@ body.is-offline .offline{display:block}
         <span class="pillst st ${LV[L][1]}">${LV[L][0]}</span>
         ${list.length ? `<ul>${list.map(e => `<li style="--c:${data.categories[e.cat].color}"><i></i><span class="t">${esc(timeLabel(e))}</span><span>${esc(e.title)}</span></li>`).join("")}</ul>`
                       : `<span class="none">—</span>`}
+        ${dayMeta(di, true)}
       </button>`;
     }
     $("#main").innerHTML = h + legend("Tap a day for details.");
@@ -274,8 +310,19 @@ body.is-offline .offline{display:block}
 
   function legend(extra){
     const hidden = data.events.filter(e => !visible(e) && !(off[e.cat] === undefined && data.categories[e.cat].defaultOff)).length;
+    const bad = (data.sources || []).filter(s => !s.ok);
     return `<div class="legend">${extra ? extra + " " : ""}Normal → Watch → Busy → Very busy is based on how many events there are and how big.
-      Rush times are estimates. ${hidden ? `<b>${hidden} events hidden by filters.</b> ` : ""}Schedule updated ${esc(data.updated)}.</div>`;
+      Rush times are estimates. "Plan" is the highest headcount any one event that day calls for. Weather is the National Weather Service forecast (7 days).
+      ${hidden ? `<b>${hidden} events hidden by filters.</b> ` : ""}Schedule updated ${esc(data.updated)}.
+      ${bad.length ? `<br><b>Couldn't reach ${bad.map(s => esc(s.label) + (s.last_ok ? " (last good " + esc(s.last_ok) + ")" : "")).join(", ")}</b> — showing the last saved rows for ${bad.length > 1 ? "those" : "that"}.` : ""}</div>`;
+  }
+  // If the automatic refresh ever stops again, say so on screen instead of quietly going out of date
+  function staleCheck(){
+    const built = Date.parse(data.built || (data.updated + "T12:00:00Z"));
+    const days = Math.floor((Date.now() - built) / 864e5);
+    const stale = !isNaN(built) && days >= 3;
+    document.body.classList.toggle("is-stale", stale);
+    if(stale) $("#stale").textContent = `Schedule has not refreshed in ${days} days (last: ${data.updated}). New events and time changes may be missing — tell the owner.`;
   }
 
   function renderFilters(){
@@ -298,7 +345,7 @@ body.is-offline .offline{display:block}
 
   function render(){
     document.querySelectorAll(".tab[data-view]").forEach(b => b.setAttribute("aria-selected", b.dataset.view===view));
-    renderFilters();
+    renderFilters(); staleCheck();
     if(view === "month") renderMonth(); else if(view === "week") renderWeek(); else renderToday();
   }
 
@@ -316,6 +363,7 @@ body.is-offline .offline{display:block}
       const d = parse(b.dataset.day), list = eventsOn(b.dataset.day), L = level(list), isT = b.dataset.day === iso(today());
       $("#dlgBody").innerHTML = `<section class="hero st ${LV[L][1]}" style="padding:16px 20px">
           <div><div class="when">${DOWL[d.getDay()]}, ${fmtShort(d)}</div><div class="big" style="font-size:2.2rem">${LV[L][0]}</div></div></section>
+        ${dayMeta(b.dataset.day)}
         ${list.length ? `<div class="list">${list.map(e => card(e, isT)).join("")}</div>` : `<div class="empty">Nothing tracked this day.</div>`}`;
       $("#dlg").showModal();
     }
