@@ -1,76 +1,65 @@
 {
- "checked": "2026-11-18",
+ "checked": "2026-11-19",
  "sources": {
   "ica": {
    "label": "Idaho Central Arena",
    "url": "https://idahocentralarena.com/events/",
    "ok": true,
-   "last_ok": "2026-11-18",
-   "count": 35
+   "last_ok": "2026-11-19",
+   "count": 34
   },
   "fb": {
    "label": "Bronco football",
    "url": "https://broncosports.com/sports/football/schedule",
    "ok": true,
-   "last_ok": "2026-11-18",
+   "last_ok": "2026-11-19",
    "count": 1
   },
   "mbb": {
    "label": "Bronco men's basketball",
    "url": "https://broncosports.com/sports/mens-basketball/schedule",
    "ok": true,
-   "last_ok": "2026-11-18",
+   "last_ok": "2026-11-19",
    "count": 13
   },
   "wbb": {
    "label": "Bronco women's basketball",
    "url": "https://broncosports.com/sports/womens-basketball/schedule",
    "ok": true,
-   "last_ok": "2026-11-18",
+   "last_ok": "2026-11-19",
    "count": 14
   },
   "boisecentre": {
    "label": "Boise Centre",
    "url": "https://www.boisecentre.com/attend/events/",
    "ok": true,
-   "last_ok": "2026-11-18",
+   "last_ok": "2026-11-19",
    "count": 2
   },
   "tmh": {
    "label": "Treefort Music Hall",
    "url": "https://treefortmusichall.com/shows/",
    "ok": true,
-   "last_ok": "2026-11-18",
-   "count": 42
+   "last_ok": "2026-11-19",
+   "count": 40
   },
   "knit": {
    "label": "Knitting Factory",
    "url": "https://bo.knittingfactory.com/",
    "ok": true,
-   "last_ok": "2026-11-18",
+   "last_ok": "2026-11-19",
    "count": 12
   },
   "weather": {
    "label": "Weather forecast",
    "url": "https://api.weather.gov/gridpoints/BOI/133,86/forecast",
    "ok": true,
-   "last_ok": "2026-11-18",
+   "last_ok": "2026-11-19",
    "count": 7
   }
  },
  "events": {
   "ica": [
-   {
-    "cat": "hockey",
-    "title": "Steelheads vs Maine Mariners",
-    "start": "2026-11-18",
-    "end": "2026-11-18",
-    "time": "7:10 PM",
-    "venue": "Idaho Central Arena (next door)",
-    "impact": "high",
-    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-maine-mariners/",
-    "doors": "6:15 PM"
-   },
    {
     "cat": "hockey",
     "title": "Steelheads vs Maine Mariners",
@@ -757,28 +746,6 @@
    }
   ],
   "tmh": [
-   {
-    "cat": "shows",
-    "title": "After Hours Music Talk: \u201cRock n\u2019 Roll Radio Let\u2019s Go! with KEXP\u201d",
-    "start": "2026-11-18",
-    "end": "2026-11-18",
-    "time": "5:30 PM",
-    "venue": "Treefort Music Hall (722 W Broad St)",
-    "impact": "low",
-    "src": "https://treefortmusichall.com/shows/afterhours",
-    "note": "Time shown is doors"
-   },
-   {
-    "cat": "shows",
-    "title": "Neptune Moon",
-    "start": "2026-11-18",
-    "end": "2026-11-18",
-    "time": "7:30 PM",
-    "venue": "Treefort Music Hall (722 W Broad St)",
-    "impact": "low",
-    "src": "https://treefortmusichall.com/shows/mega-show",
-    "note": "Time shown is doors"
-   },
    {
     "cat": "shows",
     "title": "The Brothers Comatose",
