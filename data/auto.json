@@ -1,60 +1,60 @@
 {
- "checked": "2026-11-19",
+ "checked": "2026-11-20",
  "sources": {
   "ica": {
    "label": "Idaho Central Arena",
    "url": "https://idahocentralarena.com/events/",
    "ok": true,
-   "last_ok": "2026-11-19",
+   "last_ok": "2026-11-20",
    "count": 34
   },
   "fb": {
    "label": "Bronco football",
    "url": "https://broncosports.com/sports/football/schedule",
    "ok": true,
-   "last_ok": "2026-11-19",
+   "last_ok": "2026-11-20",
    "count": 1
   },
   "mbb": {
    "label": "Bronco men's basketball",
    "url": "https://broncosports.com/sports/mens-basketball/schedule",
    "ok": true,
-   "last_ok": "2026-11-19",
+   "last_ok": "2026-11-20",
    "count": 13
   },
   "wbb": {
    "label": "Bronco women's basketball",
    "url": "https://broncosports.com/sports/womens-basketball/schedule",
    "ok": true,
-   "last_ok": "2026-11-19",
+   "last_ok": "2026-11-20",
    "count": 14
   },
   "boisecentre": {
    "label": "Boise Centre",
    "url": "https://www.boisecentre.com/attend/events/",
    "ok": true,
-   "last_ok": "2026-11-19",
+   "last_ok": "2026-11-20",
    "count": 2
   },
   "tmh": {
    "label": "Treefort Music Hall",
    "url": "https://treefortmusichall.com/shows/",
    "ok": true,
-   "last_ok": "2026-11-19",
+   "last_ok": "2026-11-20",
    "count": 40
   },
   "knit": {
    "label": "Knitting Factory",
    "url": "https://bo.knittingfactory.com/",
    "ok": true,
-   "last_ok": "2026-11-19",
+   "last_ok": "2026-11-20",
    "count": 12
   },
   "weather": {
    "label": "Weather forecast",
    "url": "https://api.weather.gov/gridpoints/BOI/133,86/forecast",
    "ok": true,
-   "last_ok": "2026-11-19",
+   "last_ok": "2026-11-20",
    "count": 7
   }
  },
@@ -748,17 +748,6 @@
   "tmh": [
    {
     "cat": "shows",
-    "title": "The Brothers Comatose",
-    "start": "2026-11-19",
-    "end": "2026-11-19",
-    "time": "7:00 PM",
-    "venue": "Treefort Music Hall (722 W Broad St)",
-    "impact": "low",
-    "src": "https://treefortmusichall.com/shows/the-brothers-comatose-2026",
-    "note": "Time shown is doors"
-   },
-   {
-    "cat": "shows",
     "title": "Canceled \u2013 Dead Poet Society",
     "start": "2026-11-20",
     "end": "2026-11-20",
@@ -964,6 +953,17 @@
     "venue": "Treefort Music Hall (722 W Broad St)",
     "impact": "low",
     "src": "https://treefortmusichall.com/shows/tfg-bingo-fundraiser-2026",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
+    "title": "Stage Dive Sessions Vol. 3",
+    "start": "2026-12-17",
+    "end": "2026-12-17",
+    "time": "6:00 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/stage-dive-sessions-vol-3",
     "note": "Time shown is doors"
    },
    {
@@ -1190,16 +1190,6 @@
   "knit": [
    {
     "cat": "shows",
-    "title": "Tito's Presents: MUSIC BINGO NIGHT",
-    "start": "2026-11-19",
-    "end": "2026-11-19",
-    "time": "7:00 PM",
-    "venue": "Knitting Factory (416 S 9th St)",
-    "impact": "low",
-    "src": "https://bo.knittingfactory.com/tm-event/music-bingo-nights/"
-   },
-   {
-    "cat": "shows",
     "title": "Scott Bradlee\u2019s Postmodern Jukebox \u2013 The Future Is Vintage World Tour",
     "start": "2026-11-20",
     "end": "2026-11-20",
@@ -1307,6 +1297,16 @@
     "venue": "Knitting Factory (416 S 9th St)",
     "impact": "low",
     "src": "https://bo.knittingfactory.com/tm-event/emo-nite/"
+   },
+   {
+    "cat": "shows",
+    "title": "Rewind: 2000s NYE Rave",
+    "start": "2026-12-31",
+    "end": "2026-12-31",
+    "time": "8:00 PM",
+    "venue": "Knitting Factory (416 S 9th St)",
+    "impact": "low",
+    "src": "https://bo.knittingfactory.com/tm-event/rewind-2000s-nye-rave/"
    }
   ]
  }
