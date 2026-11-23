@@ -1,76 +1,66 @@
 {
- "checked": "2026-11-21",
+ "checked": "2026-11-23",
  "sources": {
   "ica": {
    "label": "Idaho Central Arena",
    "url": "https://idahocentralarena.com/events/",
    "ok": true,
-   "last_ok": "2026-11-21",
-   "count": 33
+   "last_ok": "2026-11-23",
+   "count": 32
   },
   "fb": {
    "label": "Bronco football",
    "url": "https://broncosports.com/sports/football/schedule",
    "ok": true,
-   "last_ok": "2026-11-21",
+   "last_ok": "2026-11-23",
    "count": 1
   },
   "mbb": {
    "label": "Bronco men's basketball",
    "url": "https://broncosports.com/sports/mens-basketball/schedule",
    "ok": true,
-   "last_ok": "2026-11-21",
+   "last_ok": "2026-11-23",
    "count": 12
   },
   "wbb": {
    "label": "Bronco women's basketball",
    "url": "https://broncosports.com/sports/womens-basketball/schedule",
    "ok": true,
-   "last_ok": "2026-11-21",
-   "count": 14
+   "last_ok": "2026-11-23",
+   "count": 13
   },
   "boisecentre": {
    "label": "Boise Centre",
    "url": "https://www.boisecentre.com/attend/events/",
    "ok": true,
-   "last_ok": "2026-11-21",
-   "count": 2
+   "last_ok": "2026-11-23",
+   "count": 1
   },
   "tmh": {
    "label": "Treefort Music Hall",
    "url": "https://treefortmusichall.com/shows/",
    "ok": true,
-   "last_ok": "2026-11-21",
-   "count": 39
+   "last_ok": "2026-11-23",
+   "count": 37
   },
   "knit": {
    "label": "Knitting Factory",
    "url": "https://bo.knittingfactory.com/",
    "ok": true,
-   "last_ok": "2026-11-21",
+   "last_ok": "2026-11-23",
    "count": 12
   },
   "weather": {
    "label": "Weather forecast",
    "url": "https://api.weather.gov/gridpoints/BOI/133,86/forecast",
-   "ok": true,
+   "ok": false,
    "last_ok": "2026-11-21",
-   "count": 7
+   "error": "HTTPError: HTTP Error 503: Service Unavailable",
+   "count": 0
   }
  },
  "events": {
   "ica": [
-   {
-    "cat": "hockey",
-    "title": "Steelheads vs Maine Mariners",
-    "start": "2026-11-21",
-    "end": "2026-11-21",
-    "time": "7:10 PM",
-    "venue": "Idaho Central Arena (next door)",
-    "impact": "high",
-    "src": "https://idahocentralarena.com/events/idaho-steelheads-vs-maine-mariners-3/",
-    "doors": "6:15 PM"
-   },
    {
     "cat": "hockey",
     "title": "Steelheads vs Rapid City Rush",
@@ -428,9 +418,9 @@
    {
     "cat": "football",
     "title": "Broncos football vs San Diego State",
-    "start": "2026-11-21",
-    "end": "2026-11-21",
-    "time": "7:30 PM",
+    "start": "2026-12-04",
+    "end": "2026-12-04",
+    "time": "6:00 PM",
     "venue": "Albertsons Stadium (campus)",
     "impact": "high",
     "src": "https://broncosports.com/sports/football/schedule"
@@ -559,16 +549,6 @@
    }
   ],
   "wbb": [
-   {
-    "cat": "wbb",
-    "title": "Broncos women's hoops vs UC Davis",
-    "start": "2026-11-22",
-    "end": "2026-11-22",
-    "time": "2:00 PM",
-    "venue": "ExtraMile Arena (campus)",
-    "impact": "low",
-    "src": "https://broncosports.com/sports/womens-basketball/schedule"
-   },
    {
     "cat": "wbb",
     "title": "Broncos women's hoops vs Sacramento State",
@@ -703,17 +683,6 @@
   "boisecentre": [
    {
     "cat": "convention",
-    "title": "Wintry Market",
-    "start": "2026-11-20",
-    "end": "2026-11-21",
-    "time": "All day",
-    "venue": "Boise Centre (across the street)",
-    "impact": "med",
-    "src": "https://www.wintrymarket.com/",
-    "note": "Boise Centre lists this as: Consumer/Public"
-   },
-   {
-    "cat": "convention",
     "title": "2026 Festival of Trees",
     "start": "2026-11-24",
     "end": "2026-11-30",
@@ -725,39 +694,6 @@
    }
   ],
   "tmh": [
-   {
-    "cat": "shows",
-    "title": "Pop-Up Box Office",
-    "start": "2026-11-21",
-    "end": "2026-11-21",
-    "time": "12:00 PM",
-    "venue": "Treefort Music Hall (722 W Broad St)",
-    "impact": "low",
-    "src": "https://treefortmusichall.com/shows/pop-up-box-office-november26",
-    "note": "Time shown is doors"
-   },
-   {
-    "cat": "shows",
-    "title": "YOOKiE",
-    "start": "2026-11-21",
-    "end": "2026-11-21",
-    "time": "7:30 PM",
-    "venue": "Treefort Music Hall (722 W Broad St)",
-    "impact": "low",
-    "src": "https://treefortmusichall.com/shows/yookie",
-    "note": "Time shown is doors"
-   },
-   {
-    "cat": "shows",
-    "title": "Clarion",
-    "start": "2026-11-22",
-    "end": "2026-11-22",
-    "time": "7:00 PM",
-    "venue": "Treefort Music Hall (722 W Broad St)",
-    "impact": "low",
-    "src": "https://treefortmusichall.com/shows/clarion",
-    "note": "Time shown is doors"
-   },
    {
     "cat": "shows",
     "title": "DRINKURWATER",
@@ -1002,6 +938,17 @@
    },
    {
     "cat": "shows",
+    "title": "HOL!",
+    "start": "2027-01-29",
+    "end": "2027-01-29",
+    "time": "7:30 PM",
+    "venue": "Treefort Music Hall (722 W Broad St)",
+    "impact": "low",
+    "src": "https://treefortmusichall.com/shows/hol-2027",
+    "note": "Time shown is doors"
+   },
+   {
+    "cat": "shows",
     "title": "Little Stranger",
     "start": "2027-02-10",
     "end": "2027-02-10",
@@ -1158,26 +1105,6 @@
   "knit": [
    {
     "cat": "shows",
-    "title": "INZO Local Void Takeover",
-    "start": "2026-11-21",
-    "end": "2026-11-21",
-    "time": "8:00 PM",
-    "venue": "Knitting Factory (416 S 9th St)",
-    "impact": "low",
-    "src": "https://bo.knittingfactory.com/tm-event/inzo-local-void-takeover/"
-   },
-   {
-    "cat": "shows",
-    "title": "Saosin: 20 Years of Self-Titled",
-    "start": "2026-11-22",
-    "end": "2026-11-22",
-    "time": "7:00 PM",
-    "venue": "Knitting Factory (416 S 9th St)",
-    "impact": "low",
-    "src": "https://bo.knittingfactory.com/tm-event/saosin-20-years-of-self-titled/"
-   },
-   {
-    "cat": "shows",
     "title": "DynaDuo Presents: Dark Harvest IV",
     "start": "2026-11-28",
     "end": "2026-11-28",
@@ -1275,6 +1202,26 @@
     "venue": "Knitting Factory (416 S 9th St)",
     "impact": "low",
     "src": "https://bo.knittingfactory.com/tm-event/rewind-2000s-nye-rave/"
+   },
+   {
+    "cat": "shows",
+    "title": "Shrek Rave",
+    "start": "2027-01-08",
+    "end": "2027-01-08",
+    "time": "9:00 PM",
+    "venue": "Knitting Factory (416 S 9th St)",
+    "impact": "low",
+    "src": "https://bo.knittingfactory.com/tm-event/shrek-rave/"
+   },
+   {
+    "cat": "shows",
+    "title": "Hell\u2019s Belles",
+    "start": "2027-01-15",
+    "end": "2027-01-15",
+    "time": "8:00 PM",
+    "venue": "Knitting Factory (416 S 9th St)",
+    "impact": "low",
+    "src": "https://bo.knittingfactory.com/tm-event/hells-belles/"
    }
   ]
  }
