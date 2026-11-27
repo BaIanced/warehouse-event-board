@@ -1,62 +1,60 @@
 {
- "checked": "2026-11-26",
+ "checked": "2026-11-27",
  "sources": {
   "ica": {
    "label": "Idaho Central Arena",
    "url": "https://idahocentralarena.com/events/",
    "ok": true,
-   "last_ok": "2026-11-26",
+   "last_ok": "2026-11-27",
    "count": 32
   },
   "fb": {
    "label": "Bronco football",
    "url": "https://broncosports.com/sports/football/schedule",
    "ok": true,
-   "last_ok": "2026-11-26",
+   "last_ok": "2026-11-27",
    "count": 1
   },
   "mbb": {
    "label": "Bronco men's basketball",
    "url": "https://broncosports.com/sports/mens-basketball/schedule",
    "ok": true,
-   "last_ok": "2026-11-26",
+   "last_ok": "2026-11-27",
    "count": 11
   },
   "wbb": {
    "label": "Bronco women's basketball",
    "url": "https://broncosports.com/sports/womens-basketball/schedule",
    "ok": true,
-   "last_ok": "2026-11-26",
+   "last_ok": "2026-11-27",
    "count": 13
   },
   "boisecentre": {
    "label": "Boise Centre",
    "url": "https://www.boisecentre.com/attend/events/",
-   "ok": false,
-   "last_ok": "2026-11-25",
-   "error": "HTTPError: HTTP Error 403: Forbidden",
+   "ok": true,
+   "last_ok": "2026-11-27",
    "count": 1
   },
   "tmh": {
    "label": "Treefort Music Hall",
    "url": "https://treefortmusichall.com/shows/",
-   "ok": false,
-   "last_ok": "2026-11-25",
-   "error": "HTTPError: HTTP Error 403: Forbidden",
-   "count": 36
+   "ok": true,
+   "last_ok": "2026-11-27",
+   "count": 35
   },
   "knit": {
    "label": "Knitting Factory",
    "url": "https://bo.knittingfactory.com/",
    "ok": true,
-   "last_ok": "2026-11-26",
+   "last_ok": "2026-11-27",
    "count": 12
   },
   "weather": {
    "label": "Weather forecast",
    "url": "https://api.weather.gov/gridpoints/BOI/133,86/forecast",
    "ok": true,
-   "last_ok": "2026-11-26",
+   "last_ok": "2026-11-27",
    "count": 7
   }
  },
@@ -685,17 +683,6 @@
    }
   ],
   "tmh": [
-   {
-    "cat": "shows",
-    "title": "DRINKURWATER",
-    "start": "2026-11-25",
-    "end": "2026-11-25",
-    "time": "8:00 PM",
-    "venue": "Treefort Music Hall (722 W Broad St)",
-    "impact": "low",
-    "src": "https://treefortmusichall.com/shows/drinkurwater",
-    "note": "Time shown is doors"
-   },
    {
     "cat": "shows",
     "title": "Bingo Loco (Early \u2013 November Show)",
